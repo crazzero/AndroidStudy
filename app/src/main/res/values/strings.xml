@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Intent</string>
+    <string name="intent.external.browser">BROWSER</string>
+    <string name="intent.phone.call">PHONE CALL</string>
+    <string name="intent.email">EMAIL</string>
+</resources>
