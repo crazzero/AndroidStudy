@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<com.google.android.flexbox.FlexboxLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:theme="@style/MainLayout"
+    app:flexDirection="row"
+    app:flexWrap="wrap"
     tools:context=".MainActivity">
 
     <Button
@@ -14,6 +17,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/intent.external.browser" />
+
+    <Button
+        android:id="@+id/buttonWebSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intent.web.search" />
 
     <Button
         android:id="@+id/buttonPhoneCall"
@@ -27,4 +36,22 @@
         android:layout_height="wrap_content"
         android:text="@string/intent.email" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/buttonGeoDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intent.geo.default" />
+
+    <Button
+        android:id="@+id/buttonGeoZoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intent.geo.zoom" />
+
+    <Button
+        android:id="@+id/buttonWifiSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intent.wifi.settings" />
+
+</com.google.android.flexbox.FlexboxLayout>

@@ -11,15 +11,31 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         buttonExternalBrowser.setOnClickListener {
-            IntentUtils().setExternalBrowser(this, Const.EXTERNAL_BROWSER_SAMPLE).start()
+            IntentUtils(this).setExternalBrowser(Const.EXTERNAL_BROWSER_SAMPLE).start()
+        }
+
+        buttonWebSearch.setOnClickListener {
+            IntentUtils(this).setWebSearch(Const.WEB_SEARCH)
         }
 
         buttonPhoneCall.setOnClickListener {
-            IntentUtils().setPhoneCall(this, Const.PHONE_CALL_SAMPLE).start()
+            IntentUtils(this).setPhoneCall(Const.PHONE_CALL_SAMPLE).start()
         }
 
         buttonEmail.setOnClickListener {
-            IntentUtils().setEmail(this, Const.EMAIL_SAMPLE).start()
+            IntentUtils(this).setEmail(Const.EMAIL_SAMPLE).start()
+        }
+
+        buttonGeoDefault.setOnClickListener {
+            IntentUtils(this).setGeo(Const.SEOUL_LATITUDE, Const.SEOUL_LONGITUDE)
+        }
+
+        buttonGeoZoom.setOnClickListener {
+            IntentUtils(this).setGeo(Const.SEOUL_LATITUDE, Const.SEOUL_LONGITUDE, 5)
+        }
+
+        buttonWifiSettings.setOnClickListener {
+            IntentUtils(this).setWifiSettings()
         }
     }
 }
