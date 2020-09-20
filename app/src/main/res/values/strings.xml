@@ -1,6 +1,12 @@
 <resources>
+
     <string name="app_name">Intent</string>
     <string name="intent.external.browser">BROWSER</string>
+    <string name="intent.web.search">WEB SEARCH</string>
     <string name="intent.phone.call">PHONE CALL</string>
     <string name="intent.email">EMAIL</string>
+    <string name="intent.geo.default">GEO DEFAULT</string>
+    <string name="intent.geo.zoom">GEO ZOOM</string>
+    <string name="intent.wifi.settings">WIFI SETTINGS</string>
+
 </resources>
