@@ -4,12 +4,16 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 
-class IntentUtils {
+class IntentUtils() {
     private var context: Context? = null
     private var intent : Intent? = null
 
     fun start() {
-        context?.startActivity(intent)
+        context?.also {
+            if (intent?.resolveActivity(it.packageManager) != null) {
+                context?.startActivity(intent)
+            }
+        }
     }
 
     fun setExternalBrowser(context: Context, url: String?): IntentUtils {
