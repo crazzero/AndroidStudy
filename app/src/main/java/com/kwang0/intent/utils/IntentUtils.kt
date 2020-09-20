@@ -4,31 +4,41 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 
-object IntentUtils {
-    fun startExternalBrowser(context: Context, url: String?) {
+class IntentUtils {
+    private var context: Context? = null
+    private var intent : Intent? = null
+
+    fun start() {
+        context?.startActivity(intent)
+    }
+
+    fun setExternalBrowser(context: Context, url: String?): IntentUtils {
+        this.context = context
         url?.also {
             try {
-                val intent = Intent(Intent.ACTION_VIEW).setData(Uri.parse(it))
-                context.startActivity(intent)
+                intent = Intent(Intent.ACTION_VIEW).setData(Uri.parse(it))
             } catch (e: Exception) { }
         }
+        return this
     }
 
-    fun startEmail(context: Context, email: String?) {
+    fun setEmail(context: Context, email: String?): IntentUtils {
+        this.context = context
         email?.also {
             try {
-                val intent = Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:$email"))
-                context.startActivity(intent)
+                intent = Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:$email"))
             } catch (e: Exception) { }
         }
+        return this
     }
 
-    fun startPhoneCall(context: Context, phone: String?) {
+    fun setPhoneCall(context: Context, phone: String?): IntentUtils {
+        this.context = context
         phone?.also {
             try {
-                val intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phone"))
-                context.startActivity(intent)
+                intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phone"))
             } catch (e: Exception) { }
         }
+        return this
     }
 }
