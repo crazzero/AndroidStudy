@@ -15,11 +15,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         buttonPhoneCall.setOnClickListener {
-            IntentUtils().setExternalBrowser(this, Const.PHONE_CALL_SAMPLE).start()
+            IntentUtils().setPhoneCall(this, Const.PHONE_CALL_SAMPLE).start()
         }
 
         buttonEmail.setOnClickListener {
-            IntentUtils().setExternalBrowser(this, Const.EMAIL_SAMPLE).start()
+            IntentUtils().setEmail(this, Const.EMAIL_SAMPLE).start()
         }
     }
 }
