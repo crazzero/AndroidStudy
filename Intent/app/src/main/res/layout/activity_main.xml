@@ -31,6 +31,12 @@
         android:text="@string/intent.phone.call" />
 
     <Button
+        android:id="@+id/buttonPhoneCallCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intent.phone.call.country" />
+
+    <Button
         android:id="@+id/buttonEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

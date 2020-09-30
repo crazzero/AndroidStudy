@@ -22,6 +22,10 @@ class MainActivity : AppCompatActivity() {
             IntentUtils(this).setPhoneCall(Const.PHONE_CALL_SAMPLE).start()
         }
 
+        buttonPhoneCallCountry.setOnClickListener {
+            IntentUtils(this).setPhoneCallCountry(Const.PHONE_CALL_SAMPLE).start()
+        }
+
         buttonEmail.setOnClickListener {
             IntentUtils(this).setEmail(Const.EMAIL_SAMPLE).start()
         }
