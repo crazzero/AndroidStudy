@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.provider.Settings
+import com.kwang0.intent.extension.PhoneNumberHelper.getPhoneNumber
 
 class IntentUtils(private val context: Context) {
     private var intent : Intent? = null
@@ -50,6 +51,16 @@ class IntentUtils(private val context: Context) {
             try {
                 // Use intent constructor
                 intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phone"))
+            } catch (e: Exception) { }
+        }
+        return this
+    }
+
+    fun setPhoneCallCountry(phone: String?): IntentUtils {
+        phone?.also {
+            try {
+                // Use intent constructor
+                intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:${phone.getPhoneNumber()}"))
             } catch (e: Exception) { }
         }
         return this
