@@ -3,4 +3,24 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <color name="red600">#e53935</color>
+    <color name="pink600">#d81b60</color>
+    <color name="purple600">#8e24aa</color>
+    <color name="deepPurple600">#5e35b1</color>
+    <color name="indigo600">#3949ab</color>
+    <color name="blue600">#1e88e5</color>
+    <color name="lightBlue600">#039be5</color>
+    <color name="cyan600">#00acc1</color>
+    <color name="teal600">#00897b</color>
+    <color name="green600">#43a047</color>
+    <color name="lightGreen600">#7cb342</color>
+    <color name="lime600">#c0ca33</color>
+    <color name="yellow600">#fdd835</color>
+    <color name="amber600">#ffb300</color>
+    <color name="orange600">#fb8c00</color>
+    <color name="deepOrange600">#f4511e</color>
+    <color name="brown600">#6d4c41</color>
+    <color name="grey600">#757575</color>
+    <color name="blueGrey600">#546e7a</color>
 </resources>
