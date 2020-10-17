@@ -3,9 +3,16 @@ package com.kwang0.layout
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class LinearActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_linear)
+class LinearActivity : NavigationActivity() {
+
+    override val layoutId: Int
+        get() = R.layout.activity_linear
+
+    override fun initActivity() {
+
+    }
+
+    override fun initNavigation() {
+
     }
 }
