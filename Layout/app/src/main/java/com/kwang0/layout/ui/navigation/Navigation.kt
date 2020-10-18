@@ -37,7 +37,7 @@ class Navigation @JvmOverloads constructor(
         }
     }
 
-    private fun activateBack(): Navigation {
+    fun activateBack(): Navigation {
         layoutNavigationReturnActions.visibility = View.VISIBLE
         buttonNavigationBack.visibility = View.VISIBLE
         buttonNavigationExit.visibility = View.GONE
@@ -49,7 +49,7 @@ class Navigation @JvmOverloads constructor(
         return this
     }
 
-    private fun activateExit(): Navigation {
+    fun activateExit(): Navigation {
         layoutNavigationReturnActions.visibility = View.VISIBLE
         buttonNavigationBack.visibility = View.GONE
         buttonNavigationExit.visibility = View.VISIBLE
