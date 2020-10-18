@@ -7,6 +7,12 @@
     android:orientation="vertical">
 
     <Button
+        android:id="@+id/moveToFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/move.to.constraint" />
+
+    <Button
         android:id="@+id/moveToConstraint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

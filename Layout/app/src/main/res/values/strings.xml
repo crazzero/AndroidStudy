@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Layout</string>
 
+    <string name="move.to.frame">FRAME LAYOUT</string>
     <string name="move.to.constraint">CONSTRAINT LAYOUT</string>
     <string name="move.to.relative">RELATIVE LAYOUT</string>
     <string name="move.to.linear">LINEAR LAYOUT</string>
