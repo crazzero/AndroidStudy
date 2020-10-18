@@ -11,8 +11,4 @@ class LinearActivity : NavigationActivity() {
     override fun initActivity() {
 
     }
-
-    override fun initNavigation() {
-
-    }
 }

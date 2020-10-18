@@ -14,9 +14,11 @@ abstract class NavigationActivity : AppCompatActivity() {
 
         // init
         initActivity()
-        initNavigation()
     }
 
     abstract fun initActivity()
-    abstract fun initNavigation()
+
+    fun getNavigation() {
+        return
+    }
 }
