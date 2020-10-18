@@ -3,13 +3,15 @@ package com.kwang0.layout.enumerate
 import com.kwang0.layout.R
 
 enum class ActionType {
-    SETTING;
+    BACK, EXIT, SETTING, NONE;
 
-    companion object {
-        fun getDrawable(type: ActionType) {
-            when (type) {
+    val icon: Int
+        get() {
+            return when (this) {
+                BACK -> R.drawable.ic_back
+                EXIT -> R.drawable.ic_exit
                 SETTING -> R.drawable.ic_setting
+                else -> 0
             }
         }
-    }
 }

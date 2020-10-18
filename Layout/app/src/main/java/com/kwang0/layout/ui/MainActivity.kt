@@ -1,7 +1,8 @@
-package com.kwang0.layout
+package com.kwang0.layout.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.kwang0.layout.R
 import com.kwang0.layout.utils.IntentUtils
 import kotlinx.android.synthetic.main.activity_main.*
 
