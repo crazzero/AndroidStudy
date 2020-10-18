@@ -19,6 +19,7 @@
         <activity android:name=".ConstraintActivity" />
         <activity android:name=".LinearActivity" />
         <activity android:name=".RelativeActivity" />
+        <activity android:name=".FrameActivity" />
     </application>
 
 </manifest>
