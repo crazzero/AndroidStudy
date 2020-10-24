@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutRelativeRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/root.margin.top"
+    android:gravity="center_horizontal"
     tools:context=".ui.RelativeActivity">
+
+    <View
+        android:id="@+id/viewRelative1"
+        android:layout_width="@dimen/square.width"
+        android:layout_height="@dimen/square.height"
+        android:layout_alignParentTop="true"
+        android:background="@color/red600" />
+
+    <View
+        android:id="@+id/viewRelative2"
+        android:layout_width="@dimen/square.width"
+        android:layout_height="@dimen/square.height"
+        android:layout_below="@+id/viewRelative1"
+        android:background="@color/purple600" />
+
+    <View
+        android:id="@+id/viewRelative3"
+        android:layout_width="@dimen/square.width"
+        android:layout_height="@dimen/square.height"
+        android:layout_below="@+id/viewRelative2"
+        android:background="@color/indigo600" />
+
+    <View
+        android:id="@+id/viewRelative4"
+        android:layout_width="@dimen/square.width"
+        android:layout_height="@dimen/square.height"
+        android:layout_below="@+id/viewRelative3"
+        android:background="@color/lightBlue600" />
 
 </RelativeLayout>
