@@ -14,16 +14,16 @@ class FrameActivity : NavigationActivity() {
     override fun initActivity() {
         initNavigation(this)
             .activateBack()
-            .addAction(ActionType.CHANGE, ActionState.VISIBLE)
+//            .addAction(ActionType.CHANGE, ActionState.VISIBLE)
     }
 
     override fun menuButtonClicked(actionType: ActionType) {
         super.menuButtonClicked(actionType)
 
         when (actionType) {
-            ActionType.CHANGE -> {
-
-            }
+//            ActionType.CHANGE -> {
+//
+//            }
         }
     }
 }
