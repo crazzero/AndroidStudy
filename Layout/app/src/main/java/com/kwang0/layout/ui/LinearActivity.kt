@@ -13,14 +13,14 @@ class LinearActivity : NavigationActivity() {
     override fun initActivity() {
         initNavigation(this)
             .activateBack()
-            .addAction(ActionType.SETTING, ActionState.VISIBLE)
+            .addAction(ActionType.CHANGE, ActionState.VISIBLE)
     }
 
     override fun menuButtonClicked(actionType: ActionType) {
         super.menuButtonClicked(actionType)
 
         when (actionType) {
-            ActionType.SETTING -> {
+            ActionType.CHANGE -> {
 
             }
         }
