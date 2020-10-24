@@ -3,17 +3,49 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutConstraintRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/root.margin.top"
     tools:context=".ui.ConstraintActivity">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <View
+        android:id="@+id/viewConstraint1"
+        android:layout_width="@dimen/square.width"
+        android:layout_height="@dimen/square.height"
+        android:background="@color/red600"
+        app:layout_constraintBottom_toTopOf="@+id/viewConstraint2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewConstraint2"
+        android:layout_width="@dimen/square.width"
+        android:layout_height="@dimen/square.height"
+        android:background="@color/purple600"
+        app:layout_constraintBottom_toTopOf="@+id/viewConstraint3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewConstraint1" />
+
+    <View
+        android:id="@+id/viewConstraint3"
+        android:layout_width="@dimen/square.width"
+        android:layout_height="@dimen/square.height"
+        android:background="@color/indigo600"
+        app:layout_constraintBottom_toTopOf="@+id/viewConstraint4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewConstraint2" />
+
+    <View
+        android:id="@+id/viewConstraint4"
+        android:layout_width="@dimen/square.width"
+        android:layout_height="@dimen/square.height"
+        android:background="@color/lightBlue600"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewConstraint3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,10 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutFrameRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/root.margin.top"
     tools:context=".ui.FrameActivity">
+
+    <View
+        android:id="@+id/viewFrame1"
+        android:layout_width="@dimen/square.width"
+        android:layout_height="@dimen/square.height"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/red600" />
+
+    <View
+        android:id="@+id/viewFrame2"
+        android:layout_width="@dimen/square.width"
+        android:layout_height="@dimen/square.height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/frame.margin.space1"
+        android:background="@color/purple600" />
+
+    <View
+        android:id="@+id/viewFrame3"
+        android:layout_width="@dimen/square.width"
+        android:layout_height="@dimen/square.height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/frame.margin.space2"
+        android:background="@color/indigo600" />
+
+    <View
+        android:id="@+id/viewFrame4"
+        android:layout_width="@dimen/square.width"
+        android:layout_height="@dimen/square.height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/frame.margin.space3"
+        android:background="@color/lightBlue600" />
 
 </FrameLayout>

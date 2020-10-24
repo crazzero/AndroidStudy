@@ -10,7 +10,7 @@
         android:id="@+id/moveToFrame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/move.to.constraint" />
+        android:text="@string/move.to.frame" />
 
     <Button
         android:id="@+id/moveToConstraint"

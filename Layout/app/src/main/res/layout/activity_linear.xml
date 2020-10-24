@@ -3,8 +3,36 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutLinearRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/root.margin.top"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".ui.LinearActivity">
+    
+    <View
+        android:id="@+id/viewLinear1"
+        android:layout_width="@dimen/square.width"
+        android:layout_height="@dimen/square.height"
+        android:background="@color/red600" />
+
+    <View
+        android:id="@+id/viewLinear2"
+        android:layout_width="@dimen/square.width"
+        android:layout_height="@dimen/square.height"
+        android:background="@color/purple600" />
+
+    <View
+        android:id="@+id/viewLinear3"
+        android:layout_width="@dimen/square.width"
+        android:layout_height="@dimen/square.height"
+        android:background="@color/indigo600" />
+
+    <View
+        android:id="@+id/viewLinear4"
+        android:layout_width="@dimen/square.width"
+        android:layout_height="@dimen/square.height"
+        android:background="@color/lightBlue600" />
 
 </LinearLayout>

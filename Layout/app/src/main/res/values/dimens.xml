@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="square.width">80dp</dimen>
+    <dimen name="square.height">80dp</dimen>
+
+    <dimen name="root.margin.top">16dp</dimen>
+
+    <dimen name="frame.margin.space1">80dp</dimen>
+    <dimen name="frame.margin.space2">160dp</dimen>
+    <dimen name="frame.margin.space3">240dp</dimen>
+</resources>
