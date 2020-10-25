@@ -1,10 +1,10 @@
 package com.kwang0.layout.ui
 
 import android.widget.LinearLayout
-import com.kwang0.layout.ui.navigation.NavigationActivity
 import com.kwang0.layout.R
 import com.kwang0.layout.enumerate.ActionState
 import com.kwang0.layout.enumerate.ActionType
+import com.kwang0.layout.ui.navigation.NavigationActivity
 import kotlinx.android.synthetic.main.activity_linear.*
 
 class LinearActivity : NavigationActivity() {
