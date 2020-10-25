@@ -7,9 +7,10 @@ import com.kwang0.layout.utils.IntentUtils
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_constraint)
+        setContentView(R.layout.activity_main)
 
         moveToFrame.setOnClickListener { startLayoutActivity(FrameActivity::class.java) }
         moveToConstraint.setOnClickListener { startLayoutActivity(ConstraintActivity::class.java) }
