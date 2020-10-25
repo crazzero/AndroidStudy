@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">Resource</string>
 
-    <string name="resource.sample.color">Color</string>
-    <string name="resource.sample.string">String</string>
+    <string name="resource.sample.string.title">String</string>
+    <string name="resource.sample.color.title">Color</string>
+    <string name="resource.sample.drawable.title">Drawable</string>
+    <string name="resource.sample.animation.title">Animation</string>
     <string name="resource.sample.style">Style</string>
     <string name="resource.sample.dimen">Dimen</string>
 </resources>
