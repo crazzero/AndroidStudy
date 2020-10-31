@@ -5,8 +5,6 @@ import android.graphics.drawable.Drawable
 import android.os.Build
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
-import androidx.annotation.ColorRes
-import androidx.core.content.ContextCompat
 
 object ResUtils {
 
