@@ -1,7 +1,8 @@
-package com.kwang0.resource
+package com.kwang0.resource.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.kwang0.resource.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
