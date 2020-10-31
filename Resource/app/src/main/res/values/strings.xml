@@ -5,6 +5,6 @@
     <string name="resource.sample.color.title">Color</string>
     <string name="resource.sample.drawable.title">Drawable</string>
     <string name="resource.sample.animation.title">Animation</string>
-    <string name="resource.sample.style">Style</string>
-    <string name="resource.sample.dimen">Dimen</string>
+    <string name="resource.sample.style.title">Style</string>
+    <string name="resource.sample.dimen.title">Dimen</string>
 </resources>
