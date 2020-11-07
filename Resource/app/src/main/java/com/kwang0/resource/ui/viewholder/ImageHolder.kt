@@ -7,6 +7,8 @@ import com.kwang0.resource.R
 
 class ImageHolder(itemView: View) : BaseHolder(itemView) {
 
+    fun bind() {}
+
     companion object {
         fun newInstance(parent: ViewGroup): ImageHolder {
             return ImageHolder(
