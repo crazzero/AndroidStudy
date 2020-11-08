@@ -4,6 +4,9 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
 
+    <color name="color_example">@color/yellow600</color>
+
+    <color name="black">#000000</color>
     <color name="red600">#e53935</color>
     <color name="pink600">#d81b60</color>
     <color name="purple600">#8e24aa</color>
