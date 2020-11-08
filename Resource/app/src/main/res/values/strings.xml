@@ -7,4 +7,6 @@
     <string name="resource.sample.animation.title">Animation</string>
     <string name="resource.sample.style.title">Style</string>
     <string name="resource.sample.dimen.title">Dimen</string>
+
+    <string name="string_example">STRING EXAMPLE</string>
 </resources>
