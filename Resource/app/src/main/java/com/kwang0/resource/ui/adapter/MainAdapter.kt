@@ -20,16 +20,18 @@ class MainAdapter : RecyclerView.Adapter<BaseHolder>(), MainAdapterInterface {
 
     override fun addItems(items: List<ResourceEntity>) {
         items.forEach { this.items.add(it) }
+
+        notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseHolder {
         return when (viewType) {
-            ResourceEntity.ANIMATION_TYPE, ResourceEntity.COLOR_TYPE, ResourceEntity.DRAWABLE_TYPE -> {
-                ImageHolder.newInstance(parent)
-            }
-
             ResourceEntity.STRING_TYPE -> {
                 TextHolder.newInstance(parent)
+            }
+
+            ResourceEntity.COLOR_TYPE, ResourceEntity.DRAWABLE_TYPE, ResourceEntity.ANIMATION_TYPE -> {
+                ImageHolder.newInstance(parent)
             }
 
             else -> {
@@ -40,8 +42,8 @@ class MainAdapter : RecyclerView.Adapter<BaseHolder>(), MainAdapterInterface {
 
     override fun onBindViewHolder(holder: BaseHolder, position: Int) {
         when (holder) {
-            is ImageHolder -> holder.bind()
-            is TextHolder -> holder.bind()
+            is ImageHolder -> holder.bind(items[position])
+            is TextHolder -> holder.bind(items[position])
         }
 
     }
