@@ -5,5 +5,5 @@
     <string name="move.to.constraint">CONSTRAINT LAYOUT</string>
     <string name="move.to.relative">RELATIVE LAYOUT</string>
     <string name="move.to.linear">LINEAR LAYOUT</string>
-    <string name="move.to.flex_box">FLEX BOX LAYOUT</string>
+    <string name="move.to.flex">FLEX LAYOUT</string>
 </resources>
