@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutFlexRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/root.margin.top"
+    app:flexDirection="column">
+
+    <View
+        android:id="@+id/viewFlex1"
+        android:layout_width="@dimen/square.width"
+        android:layout_height="@dimen/square.height"
+        android:background="@color/red600" />
+
+    <View
+        android:id="@+id/viewFlex2"
+        android:layout_width="@dimen/square.width"
+        android:layout_height="@dimen/square.height"
+        android:background="@color/purple600" />
+
+    <View
+        android:id="@+id/viewFlex3"
+        android:layout_width="@dimen/square.width"
+        android:layout_height="@dimen/square.height"
+        android:background="@color/indigo600" />
+
+    <View
+        android:id="@+id/viewFlex4"
+        android:layout_width="@dimen/square.width"
+        android:layout_height="@dimen/square.height"
+        android:background="@color/lightBlue600" />
+
+</com.google.android.flexbox.FlexboxLayout>

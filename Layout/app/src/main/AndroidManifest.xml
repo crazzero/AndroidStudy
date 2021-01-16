@@ -21,6 +21,7 @@
         <activity android:name=".ui.LinearActivity" />
         <activity android:name=".ui.RelativeActivity" />
         <activity android:name=".ui.FrameActivity" />
+        <activity android:name=".ui.FlexActivity" />
     </application>
 
 </manifest>

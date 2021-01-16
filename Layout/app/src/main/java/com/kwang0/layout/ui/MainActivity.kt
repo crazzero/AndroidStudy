@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         moveToConstraint.setOnClickListener { startLayoutActivity(ConstraintActivity::class.java) }
         moveToRelative.setOnClickListener { startLayoutActivity(RelativeActivity::class.java) }
         moveToLinear.setOnClickListener { startLayoutActivity(LinearActivity::class.java) }
+        moveToFlex.setOnClickListener { startLayoutActivity(FlexActivity::class.java) }
     }
 
     private fun startLayoutActivity(clazz: Class<*>) {
