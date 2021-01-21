@@ -7,13 +7,10 @@ import android.graphics.Paint
 import android.graphics.Path
 import android.util.AttributeSet
 import android.view.View
-import androidx.annotation.Nullable
-import kotlin.math.abs
-import kotlin.math.cos
-import kotlin.math.pow
-import kotlin.math.sin
+import kotlin.math.*
 
-class SquircleSmoothCornerView(context: Context?, @Nullable attrs: AttributeSet?) : View(context, attrs) {
+class SquircleSmoothCornerView @JvmOverloads constructor(context: Context?, attrs: AttributeSet? = null, defStyleAttr: Int = 0)
+    : View(context, attrs, defStyleAttr) {
 
     private var WIDTH = 400f
     private var HEIGHT = 400f
@@ -95,13 +92,13 @@ class SquircleSmoothCornerView(context: Context?, @Nullable attrs: AttributeSet?
         mPaint!!.isAntiAlias = true
         val path: Path
         if (isSquare) {
-            path = SketchAlSmoothRect(
+            path = sketchAllSmoothRect(
                 0f, 0f, WIDTH, WIDTH, SKETCH_ROUND_RECT_RADIUS, SKETCH_ROUND_RECT_RADIUS,
                 ROUND_TL, ROUND_TR, ROUND_BL, ROUND_BR
             )
             canvas.drawPath(path, mPaint!!)
         } else {
-            path = SketchAlSmoothRect(
+            path = sketchAllSmoothRect(
                 0f, 0f, WIDTH, HEIGHT, SKETCH_ROUND_RECT_RADIUS, SKETCH_ROUND_RECT_RADIUS,
                 ROUND_TL, ROUND_TR, ROUND_BL, ROUND_BR
             )
@@ -109,7 +106,7 @@ class SquircleSmoothCornerView(context: Context?, @Nullable attrs: AttributeSet?
         canvas.drawPath(path, mPaint!!)
     }
 
-    fun SketchAlSmoothRect(
+    private fun sketchAllSmoothRect(
         left: Float,
         top: Float,
         right: Float,
@@ -170,8 +167,7 @@ class SquircleSmoothCornerView(context: Context?, @Nullable attrs: AttributeSet?
     }
 
     fun getMAXRadius(width: Float, height: Float): Float {
-        val minBorder: Float
-        minBorder = if (width > height) {
+        val minBorder = if (width > height) {
             height
         } else {
             width
@@ -184,6 +180,6 @@ class SquircleSmoothCornerView(context: Context?, @Nullable attrs: AttributeSet?
         height: Float,
         radius: Float
     ): Float {
-        return Math.min(radius, getMAXRadius(width, height))
+        return min(radius, getMAXRadius(width, height))
     }
 }
