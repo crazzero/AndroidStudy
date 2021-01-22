@@ -92,13 +92,13 @@ class SquircleSmoothCornerView @JvmOverloads constructor(context: Context?, attr
         mPaint!!.isAntiAlias = true
         val path: Path
         if (isSquare) {
-            path = sketchAllSmoothRect(
+            path = sketchSmoothRect(
                 0f, 0f, WIDTH, WIDTH, SKETCH_ROUND_RECT_RADIUS, SKETCH_ROUND_RECT_RADIUS,
                 ROUND_TL, ROUND_TR, ROUND_BL, ROUND_BR
             )
             canvas.drawPath(path, mPaint!!)
         } else {
-            path = sketchAllSmoothRect(
+            path = sketchSmoothRect(
                 0f, 0f, WIDTH, HEIGHT, SKETCH_ROUND_RECT_RADIUS, SKETCH_ROUND_RECT_RADIUS,
                 ROUND_TL, ROUND_TR, ROUND_BL, ROUND_BR
             )
@@ -106,7 +106,7 @@ class SquircleSmoothCornerView @JvmOverloads constructor(context: Context?, attr
         canvas.drawPath(path, mPaint!!)
     }
 
-    private fun sketchAllSmoothRect(
+    private fun sketchSmoothRect(
         left: Float,
         top: Float,
         right: Float,
@@ -132,8 +132,8 @@ class SquircleSmoothCornerView @JvmOverloads constructor(context: Context?, attr
         } else {
             ry *= width / height
         }
-        for (i in 0..3590000) {
-            val j = (i / 10000).toFloat()
+        for (i in 0..359) {
+            val j = i.toFloat()
             val angle = (j * 2f * Math.PI / 360.0)
             val cosX = cos(angle.toDouble()).toFloat()
             val x = abs(cosX).toDouble().pow(rx / 100f.toDouble()).toFloat() * 50f * abs(cosX + 0.0000000001f) / (cosX + 0.0000000001f) + 50f
@@ -144,21 +144,21 @@ class SquircleSmoothCornerView @JvmOverloads constructor(context: Context?, attr
             if (j == 0f) path.moveTo(
                 percentX * width + posX,
                 percentY * height + posY
-            ) else if (!br && i < 45) {
+            ) else if (!br && j < 45) {
                 path.lineTo(width + posX, height + posY)
-            } else if (!br && i >= 45 && i < 90) {
+            } else if (!br && j >= 45 && j < 90) {
                 path.lineTo(posX + width / 2, height + posY)
-            } else if (!bl && i >= 90 && i < 135) {
+            } else if (!bl && j >= 90 && j < 135) {
                 path.lineTo(posX, height + posY)
-            } else if (!bl && i >= 135 && i < 180) {
+            } else if (!bl && j >= 135 && j < 180) {
                 path.lineTo(posX, height / 2 + posY)
-            } else if (!tl && i >= 180 && i < 225) {
+            } else if (!tl && j >= 180 && j < 225) {
                 path.lineTo(posX, posY)
-            } else if (!tl && i >= 225 && i < 270) {
+            } else if (!tl && j >= 225 && j < 270) {
                 path.lineTo(posX + width / 2, posY)
-            } else if (!tr && i >= 270 && i < 315) {
+            } else if (!tr && j >= 270 && j < 315) {
                 path.lineTo(posX + width, posY)
-            } else if (!tr && i >= 315 && i < 360) {
+            } else if (!tr && j >= 315 && j < 360) {
                 path.lineTo(posX + width, posY + height / 2)
             } else path.lineTo(percentX * width + posX, percentY * height + posY)
         }
