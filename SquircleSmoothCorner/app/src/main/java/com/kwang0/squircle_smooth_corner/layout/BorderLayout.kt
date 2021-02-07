@@ -31,9 +31,12 @@ class BorderLayout @JvmOverloads constructor(
         mPaint!!.style = Paint.Style.FILL
         mPaint!!.strokeWidth = 12f
         mPaint!!.isAntiAlias = true
-        mPaint!!.color = Color.rgb(253, 86, 85)
+        mPaint!!.color = Color.parseColor("#14a7a7aa")
         mContentPaint = Paint()
+        mContentPaint!!.style = Paint.Style.FILL
+        mContentPaint!!.strokeWidth = 12f
         mContentPaint!!.isAntiAlias = true
+        mContentPaint!!.color = Color.parseColor("#14000000")
         mContentPaint!!.xfermode = PorterDuffXfermode(PorterDuff.Mode.DST_IN)
     }
 
@@ -74,7 +77,7 @@ class BorderLayout @JvmOverloads constructor(
                 ROUND_BR
             )
             canvas.drawPath(path, mPaint!!)
-            canvas.drawPath(contentPath, mContentPaint!!)
+//            canvas.drawPath(contentPath, mContentPaint!!)
             canvas.clipPath(contentPath)
 
             super.dispatchDraw(canvas)
