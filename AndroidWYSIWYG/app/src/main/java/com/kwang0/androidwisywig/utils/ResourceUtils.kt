@@ -1,8 +1,11 @@
 package com.kwang0.androidwisywig.utils
 
 import android.annotation.SuppressLint
+import android.graphics.Color
 import android.graphics.drawable.Drawable
 import android.os.Build
+import androidx.annotation.ColorRes
+import androidx.core.content.ContextCompat
 import com.kwang0.androidwisywig.App
 
 object ResourceUtils {
@@ -20,5 +23,13 @@ object ResourceUtils {
         } catch (e: Exception) { }
 
         return null
+    }
+
+    fun getColor(@ColorRes colorId: Int): Int {
+        App.appContext?.also {
+            ContextCompat.getColor(it, colorId)
+        }
+
+        return Color.WHITE
     }
 }
