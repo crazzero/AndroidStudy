@@ -28,6 +28,7 @@
         android:layout_height="wrap_content">
 
         <com.kwang0.androidwisywig.ui.layout.ActionLayout
+            android:id="@+id/layoutMainAction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
