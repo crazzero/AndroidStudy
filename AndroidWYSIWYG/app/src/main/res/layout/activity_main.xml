@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".ui.activity.MainActivity">
 
     <EditText
         android:id="@+id/inputMain"
@@ -24,15 +24,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:id="@+id/layoutMainAction"
+        <com.kwang0.androidwisywig.ui.layout.ActionLayout
             android:layout_width="wrap_content"
-            android:layout_height="64dp"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:orientation="horizontal" />
+            android:layout_height="wrap_content" />
 
     </HorizontalScrollView>
 

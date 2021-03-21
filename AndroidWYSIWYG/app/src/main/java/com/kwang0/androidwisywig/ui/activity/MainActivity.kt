@@ -1,7 +1,8 @@
-package com.kwang0.androidwisywig
+package com.kwang0.androidwisywig.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.kwang0.androidwisywig.R
 
 class MainActivity : AppCompatActivity() {
 
