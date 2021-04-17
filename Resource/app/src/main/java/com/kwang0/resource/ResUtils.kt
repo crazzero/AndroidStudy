@@ -77,4 +77,14 @@ object ResUtils {
 
         return null
     }
+
+    fun getDimen(id: Int): Float {
+        try {
+            App.appContext.also {
+                return it.resources.getDimension(id)
+            }
+        } catch (e: Exception) { }
+
+        return 0f
+    }
 }
