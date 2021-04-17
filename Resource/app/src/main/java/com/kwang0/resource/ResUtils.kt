@@ -97,4 +97,14 @@ object ResUtils {
 
         return 0
     }
+
+    fun getPixelOffset(id: Int): Int {
+        try {
+            App.appContext.also {
+                return it.resources.getDimensionPixelOffset(id)
+            }
+        } catch (e: Exception) { }
+
+        return 0
+    }
 }
