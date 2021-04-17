@@ -87,4 +87,14 @@ object ResUtils {
 
         return 0f
     }
+
+    fun getPixel(id: Int): Int {
+        try {
+            App.appContext.also {
+                return it.resources.getDimensionPixelSize(id)
+            }
+        } catch (e: Exception) { }
+
+        return 0
+    }
 }
