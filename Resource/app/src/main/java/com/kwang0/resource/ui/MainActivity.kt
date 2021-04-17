@@ -2,8 +2,10 @@ package com.kwang0.resource.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.kwang0.resource.R
+import com.kwang0.resource.ResUtils
 import com.kwang0.resource.model.ResourceEntity
 import com.kwang0.resource.ui.adapter.MainAdapter
 import kotlinx.android.synthetic.main.activity_main.*
@@ -23,6 +25,14 @@ class MainActivity : AppCompatActivity() {
         }.also {
             adapter.setItems(items)
         }
+
+        Log.e(this::class.java.simpleName, "get dp dimen : " + ResUtils.getDimen(R.dimen.appBarHeight))
+        Log.e(this::class.java.simpleName, "get dp pixel : " + ResUtils.getPixel(R.dimen.appBarHeight))
+        Log.e(this::class.java.simpleName, "get dp pixel offset : " + ResUtils.getPixelOffset(R.dimen.appBarHeight))
+
+        Log.e(this::class.java.simpleName, "get dp dimen : " + ResUtils.getDimen(R.dimen.txtLarge))
+        Log.e(this::class.java.simpleName, "get dp pixel : " + ResUtils.getPixel(R.dimen.txtLarge))
+        Log.e(this::class.java.simpleName, "get dp pixel offset : " + ResUtils.getPixelOffset(R.dimen.txtLarge))
     }
 
 
