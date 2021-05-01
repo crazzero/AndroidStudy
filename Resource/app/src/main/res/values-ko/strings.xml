@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">리소스</string>
+
+    <string name="resource.sample.string.title">문자열</string>
+    <string name="resource.sample.color.title">색상</string>
+    <string name="resource.sample.drawable.title">이미지</string>
+    <string name="resource.sample.animation.title">애니메이션</string>
+    <string name="resource.sample.style.title">스타일</string>
+    <string name="resource.sample.dimen.title">크기</string>
+
+    <string name="string_example">STRING EXAMPLE</string>
+</resources>
