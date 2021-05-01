@@ -15,6 +15,7 @@ android {
 
         // restrict resources only korean and english
         resConfigs "ko,en"
+        // resConfigs "ko,en,ja"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 

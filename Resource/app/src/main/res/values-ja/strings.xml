@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">リソース</string>
+
+    <string name="resource.sample.string.title">文字列</string>
+    <string name="resource.sample.color.title">色</string>
+    <string name="resource.sample.drawable.title">画像</string>
+    <string name="resource.sample.animation.title">アニメ</string>
+    <string name="resource.sample.style.title">スタイル</string>
+    <string name="resource.sample.dimen.title">大きさ</string>
+
+    <string name="string_example">STRING EXAMPLE</string>
+</resources>
