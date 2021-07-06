@@ -6,12 +6,13 @@
     android:layout_height="wrap_content"
     android:divider="@drawable/divider_multi_6dp"
     android:orientation="vertical"
-    android:padding="10dp"
     android:showDividers="middle">
 
     <LinearLayout
+        android:id="@+id/layoutMainItems"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -32,6 +33,7 @@
                 android:id="@+id/textTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#222222"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -39,8 +41,8 @@
                 android:id="@+id/textDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textColor="#888888"
+                android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -60,8 +62,6 @@
         android:layout_height="wrap_content"
         android:divider="@drawable/divider_multi_6dp"
         android:orientation="vertical"
-        android:showDividers="middle">
-
-    </LinearLayout>
+        android:showDividers="middle" />
 
 </LinearLayout>
