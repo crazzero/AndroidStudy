@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MultiItemsLayout</string>
+    <string name="bottom_content_text">Hello world it\'s kwang0.\nI\'m android developer</string>
 </resources>
