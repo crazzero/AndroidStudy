@@ -14,7 +14,9 @@ class MultiItemsLayout @JvmOverloads constructor(
     defStyleAttr: Int = 0
 ) : FrameLayout(context, attrs, defStyleAttr) {
 
-    private var binding: LayoutMultiItemsBinding? = null
+    private val binding: LayoutMultiItemsBinding by lazy {
+        LayoutMultiItemsBinding.inflate(LayoutInflater.from(context), this, true)
+    }
 
     private val componentIds = arrayListOf(
         R.id.rootMultiItems,
@@ -23,8 +25,6 @@ class MultiItemsLayout @JvmOverloads constructor(
     )
 
     init {
-        binding = LayoutMultiItemsBinding.inflate(LayoutInflater.from(context), this, true)
-
         val typedArray = context.theme.obtainStyledAttributes(
             attrs,
             R.styleable.MultiItemsLayout,
@@ -33,17 +33,11 @@ class MultiItemsLayout @JvmOverloads constructor(
         )
 
         try {
-            binding?.textTitle?.text = typedArray.getString(R.styleable.MultiItemsLayout_mil_title)
-            binding?.textDescription?.text = typedArray.getString(R.styleable.MultiItemsLayout_mil_desc)
+            binding.textTitle.text = typedArray.getString(R.styleable.MultiItemsLayout_mil_title)
+            binding.textDescription.text = typedArray.getString(R.styleable.MultiItemsLayout_mil_desc)
         } finally {
             typedArray.recycle()
         }
-    }
-
-    override fun onDetachedFromWindow() {
-        super.onDetachedFromWindow()
-
-        binding = null
     }
 
     override fun addView(child: View?, index: Int, params: ViewGroup.LayoutParams?) {
@@ -52,21 +46,21 @@ class MultiItemsLayout @JvmOverloads constructor(
         } else if (child != null) {
             when ((params as? MultiItemsLayoutParams)?.position) {
                 ItemPosition.LEFT -> {
-                    binding?.layoutLeftItems?.apply {
+                    binding.layoutLeftItems.apply {
                         removeAllViews()
                         addView(child, -1, params)
                     }
                 }
 
                 ItemPosition.RIGHT -> {
-                    binding?.layoutRightItems?.apply {
+                    binding.layoutRightItems.apply {
                         removeAllViews()
                         addView(child, -1, params)
                     }
                 }
 
                 else -> {
-                    binding?.layoutBottomItems?.apply {
+                    binding.layoutBottomItems.apply {
                         removeAllViews()
                         addView(child, -1, params)
                     }
