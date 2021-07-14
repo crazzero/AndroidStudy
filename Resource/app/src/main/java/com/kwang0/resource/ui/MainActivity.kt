@@ -1,8 +1,8 @@
 package com.kwang0.resource.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.kwang0.resource.R
 import com.kwang0.resource.ResUtils

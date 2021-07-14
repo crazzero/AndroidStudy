@@ -3,7 +3,6 @@ package com.kwang0.resource.ui.viewholder
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.animation.Animation
 import com.kwang0.resource.R
 import com.kwang0.resource.ResUtils
 import com.kwang0.resource.model.ResourceEntity
