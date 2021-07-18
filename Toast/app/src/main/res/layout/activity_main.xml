@@ -1,19 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootMainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <com.kwang0.toast.view.CustomToastView
+        android:id="@+id/customToast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:alpha="0.0"
+        android:background="@drawable/bg_custom_toast"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        tools:text="111"
+        tools:visibility="visible" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSystemShortToast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="16dp"
+            android:tag="@string/tag_short_toast"
+            android:text="@string/show_system_short_toast" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSystemShortGravityToast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="16dp"
+            android:tag="@string/tag_short_gravity_toast"
+            android:text="@string/show_system_short_gravity_toast" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSystemLongToast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="16dp"
+            android:tag="@string/tag_long_toast"
+            android:text="@string/show_system_long_toast" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSystemLongGravityToast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="16dp"
+            android:tag="@string/tag_long_gravity_toast"
+            android:text="@string/show_system_long_gravity_toast" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonCustomToast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="16dp"
+            android:text="@string/show_custom_toast" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSnack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="16dp"
+            android:text="@string/show_custom_toast" />
+
+    </LinearLayout>
+
+</FrameLayout>
