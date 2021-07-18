@@ -2,7 +2,10 @@ package com.kwang0.toast.helper
 
 import android.content.Context
 import android.view.Gravity
+import android.view.View
 import android.widget.Toast
+import com.kwang0.toast.R
+import com.kwang0.toast.utils.ResourceUtils
 
 object SystemToastHelper {
     fun showShortToast(context: Context, message: String?) {
@@ -47,6 +50,26 @@ object SystemToastHelper {
                         toast.show()
                     }
                 }
+            }
+        }
+    }
+
+    fun showToast(view: View, message: String?) {
+        when (view.tag) {
+            ResourceUtils.getString(view.context, R.string.tag_short_toast) -> {
+                showShortToast(view.context, message)
+            }
+
+            ResourceUtils.getString(view.context, R.string.tag_short_gravity_toast) -> {
+                showShortToast(view.context, message, Gravity.TOP, 0, 0)
+            }
+
+            ResourceUtils.getString(view.context, R.string.tag_long_toast) -> {
+                showLongToast(view.context, message)
+            }
+
+            ResourceUtils.getString(view.context, R.string.tag_long_gravity_toast) -> {
+                showLongToast(view.context, message, Gravity.TOP, 0, 0)
             }
         }
     }
