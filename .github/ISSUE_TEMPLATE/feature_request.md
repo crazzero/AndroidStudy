@@ -1,7 +1,7 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: ''
+title: '[ISSUE TEMPLATE] ...'
 labels: 'enhancement'
 assignees: 'kwang0e'
 
