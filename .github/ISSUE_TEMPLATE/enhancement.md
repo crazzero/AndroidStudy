@@ -1,7 +1,7 @@
 ---
 name: Enhancement
 about: Suggest an idea for this project
-title: '[ISSUE TEMPLATE] ...'
+title: '[Enhancement] ...'
 labels: 'enhancement'
 assignees: 'kwang0e'
 
