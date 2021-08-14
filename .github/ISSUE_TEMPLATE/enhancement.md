@@ -1,6 +1,6 @@
 ---
 name: Enhancement
-about: Suggest an idea for this project
+about: 프로젝트에서 다루면 좋을 내용을 추천해 주세요
 title: '[Enhancement] ...'
 labels: 'enhancement'
 assignees: 'kwang0e'
