@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/textDialogTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,26 +30,26 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/textDialogCancel"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="8dp"
-                android:text="취소"
+                android:text="@string/common.cancel"
                 android:textAlignment="center"
                 android:textColor="@color/grey600"
                 android:textSize="20sp" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/textDialogDone"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="?android:attr/selectableItemBackground"
                 android:padding="8dp"
-                android:text="완료"
+                android:text="@string/common.confirm"
                 android:textAlignment="center"
                 android:textColor="@color/colorBlack"
                 android:textSize="20sp"
