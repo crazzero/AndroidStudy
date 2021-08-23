@@ -1,7 +1,8 @@
-package com.kwang0.layout
+package com.kwang0.layout.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.kwang0.layout.R
 
 class CoordinatorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
