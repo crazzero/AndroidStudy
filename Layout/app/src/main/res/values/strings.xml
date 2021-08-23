@@ -6,6 +6,7 @@
     <string name="move.to.relative">RELATIVE LAYOUT</string>
     <string name="move.to.linear">LINEAR LAYOUT</string>
     <string name="move.to.flex">FLEX LAYOUT</string>
+    <string name="move.to.coordinator">COORDINATOR LAYOUT</string>
 
     <string name="common.cancel">Cancel</string>
     <string name="common.confirm">OK</string>
