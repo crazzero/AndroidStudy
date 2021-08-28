@@ -1,7 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/svFragmentContent"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".presentation.view.fragment.details.MovieDetailsFragment">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/fragmentMoviesDetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgCoverMovie"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/imageCoverSize"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/spacing_xl"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_avangerscover" />
+
+        <ImageButton
+            android:id="@+id/btnDownload"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/imgCoverMovie"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/spacing_s"
+            android:background="@drawable/button_download_selector"
+            android:src="@android:drawable/stat_sys_download" />
+
+        <ImageView
+            android:id="@+id/imgProfileMovie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgCoverMovie"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="@dimen/spacing_s"
+            android:layout_marginBottom="@dimen/spacing_m"
+            android:scaleType="fitStart"
+            android:src="@mipmap/img_avengersprofile" />
+
+        <TextView
+            android:id="@+id/txtvMovieTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgCoverMovie"
+            android:layout_toRightOf="@id/imgProfileMovie"
+            android:text="@string/movie_name"
+            android:textAlignment="gravity"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/textTitleSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtvMovieReleasedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtvMovieTitle"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:layout_toRightOf="@id/imgProfileMovie"
+            android:text="@string/movie_releasedDate"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSubTitleSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtvOverview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgProfileMovie"
+            android:layout_marginLeft="@dimen/spacing_m"
+            android:layout_marginTop="@dimen/spacing_m"
+            android:text="Overview:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSubTitleSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtvMovieDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtvOverview"
+            android:layout_marginLeft="@dimen/spacing_m"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:layout_marginRight="@dimen/spacing_m"
+            android:gravity="start"
+            android:text="@string/txt_movie_overview"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/textOverviewSize" />
+
+        <Button
+            android:id="@+id/btnMovieTrailer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtvMovieReleasedDate"
+            android:layout_marginTop="@dimen/spacing_m"
+            android:layout_toRightOf="@id/imgProfileMovie"
+            android:text="@string/btn_movie_trailer" />
+
+    </RelativeLayout>
+
+</ScrollView>
