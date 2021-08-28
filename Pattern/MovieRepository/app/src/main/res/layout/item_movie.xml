@@ -1,43 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.appcompat.widget.AppCompatImageView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/image"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/itemMovieHeight"
-    android:background="@color/white"
-    android:padding="@dimen/spacing_s">
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imgItemMovie"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="TODO"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:src="@mipmap/ic_launcher" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/txtvMovieItemTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:maxLines="1"
-        android:text="Movie Title"
-        android:textAlignment="gravity"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toRightOf="@id/imgItemMovie" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/txtvMovieItemOverview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:maxLines="4"
-        android:text="Movie Description"
-        android:textAlignment="gravity"
-        android:textColor="@color/black"
-        app:layout_constraintLeft_toRightOf="@id/imgItemMovie"
-        app:layout_constraintTop_toBottomOf="@id/txtvMovieItemTitle" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:layout_height="@dimen/item_height"
+    android:scaleType="fitXY"
+    android:background="@drawable/item_background"
+    android:padding="@dimen/item_margin"
+    android:contentDescription="@string/movie_poster" />
