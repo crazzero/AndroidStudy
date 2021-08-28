@@ -1,6 +1,6 @@
-package com.kwang0.di.custom
+package com.kwang0.di.annotation.hilt_component
 
-import com.kwang0.di.entity.SomeEntity
+import com.kwang0.di.data.db.SomeEntity
 import dagger.BindsInstance
 import dagger.hilt.DefineComponent
 import dagger.hilt.components.SingletonComponent

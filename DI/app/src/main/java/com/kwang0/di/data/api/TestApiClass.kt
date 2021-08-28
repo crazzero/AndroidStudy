@@ -1,4 +1,4 @@
-package com.kwang0.di.api
+package com.kwang0.di.data.api
 
 import javax.inject.Inject
 
