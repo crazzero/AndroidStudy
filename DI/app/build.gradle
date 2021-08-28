@@ -70,6 +70,13 @@ dependencies {
     implementation Libs.AndroidX.Hilt.work
     kapt Libs.AndroidX.Hilt.compiler
 
+    implementation Libs.Retrofit.runtime
+    implementation Libs.Retrofit.serialization
+
+    implementation Libs.AndroidX.Room.runtime
+    implementation Libs.AndroidX.Room.ktx
+    kapt Libs.AndroidX.Room.compiler
+
     testImplementation Libs.Test.junit
     androidTestImplementation Libs.Test.runner
     androidTestImplementation Libs.Test.espresso
