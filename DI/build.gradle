@@ -1,0 +1,30 @@
+import com.kwang0.dependencies.Libs
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+
+        maven { url "https://jitpack.io" }
+    }
+    dependencies {
+        classpath Libs.androidGradlePlugin
+        classpath Libs.Kotlin.plugin
+        classpath Libs.Kotlin.serializationPlugin
+        classpath Libs.Dagger.hiltPlugin
+        classpath Libs.AndroidX.Navigation.safeArgsPlugin
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
