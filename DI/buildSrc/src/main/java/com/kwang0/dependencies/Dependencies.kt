@@ -13,11 +13,6 @@ object Versions {
 object Libs {
     const val androidGradlePlugin = "com.android.tools.build:gradle:7.0.0"
 
-    // UI
-    const val insetter = "dev.chrisbanes.insetter:insetter:0.6.0"
-    const val lottie = "com.airbnb.android:lottie:3.7.1"
-    const val recyclerViewAnimators = "jp.wasabeef:recyclerview-animators:4.0.2"
-
     // Utils
     const val timber = "com.jakewharton.timber:timber:4.7.1"
     const val threetenAbp = "com.jakewharton.threetenabp:threetenabp:1.3.1"
