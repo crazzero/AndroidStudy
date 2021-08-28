@@ -6,5 +6,5 @@ import retrofit2.http.GET
 
 interface TestApi {
     @GET("/some_url")
-    suspend fun getSome() : Response<SomeEntity>
+    suspend fun getSome() : Response<SomeResponse>
 }
