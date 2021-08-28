@@ -1,4 +1,4 @@
-package com.kwang0.di
+package com.kwang0.di.app
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
