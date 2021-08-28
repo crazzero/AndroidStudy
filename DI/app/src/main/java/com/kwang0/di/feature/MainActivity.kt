@@ -1,7 +1,9 @@
-package com.kwang0.di
+package com.kwang0.di.feature
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.kwang0.di.R
+import com.kwang0.di.SomeClass
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
