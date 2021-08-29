@@ -1,7 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     ext {
-        kotlinVersion = '1.4.31'
+        kotlinVersion = '1.5.20'
 
         // Current lint target: Studio 4.2 / AGP 7
         //gradlePluginVersion = '4.2.0-beta05'
@@ -9,7 +9,7 @@ buildscript {
 
         // Upcoming lint target: Arctic Fox / AGP 7
         gradlePluginVersion = '7.0.1'
-        lintVersion = '30.0.0-alpha10' // if gradle plugin was 4.1.2, you'd use 27.1.2 here
+        lintVersion = '30.0.1' // if gradle plugin was 4.1.2, you'd use 27.1.2 here
     }
 
     repositories {
