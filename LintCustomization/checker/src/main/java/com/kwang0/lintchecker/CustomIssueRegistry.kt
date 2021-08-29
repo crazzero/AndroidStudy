@@ -1,4 +1,4 @@
-package com.kwang0.lintchecker
+package com.kwang0.checker
 
 import com.android.tools.lint.client.api.IssueRegistry
 import com.android.tools.lint.detector.api.CURRENT_API

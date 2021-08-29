@@ -1,4 +1,4 @@
-package com.kwang0.lintchecker
+package com.kwang0.checker
 
 import com.android.tools.lint.detector.api.*
 import com.intellij.psi.PsiMethod
@@ -7,6 +7,10 @@ import org.jetbrains.uast.UCallExpression
 
 
 class ContentViewDetector : Detector(), SourceCodeScanner {
+
+    override fun getApplicableMethodNames(): List<String>? {
+        return listOf("setContentView")
+    }
 
     override fun visitMethodCall(context: JavaContext, node: UCallExpression, method: PsiMethod) {
         if (context.evaluator.isMemberInClass(method, "androidx.databinding.DataBindingUtil")) {
