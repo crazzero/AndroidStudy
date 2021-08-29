@@ -153,7 +153,7 @@ object Stubs {
     val TIME_TRAVEL_EXPERIMENT_KT: TestFile = kotlin(
         "com/kwang0/lintcustomization/app/TimeTravelExperiment.kt",
         """
-                package com.rahulrav.app
+                package com.kwang0.lintcustomization.app
                 
                 @Experimental
                 @Retention(AnnotationRetention.BINARY)
@@ -164,7 +164,7 @@ object Stubs {
     val TIME_TRAVEL_PROVIDER_KT = kotlin(
         "com/kwang0/lintcustomization/app/TimeTravelProvider.kt",
         """
-                package com.rahulrav.app
+                package com.kwang0.lintcustomization.app
                 
                 @Suppress("unused")
                 @TimeTravelExperiment
@@ -180,7 +180,7 @@ object Stubs {
     val USE_TIME_TRAVEL_EXPERIMENT_FROM_JAVA = java(
         "com/kwang0/lintcustomization/app/UseTimeTravelExperimentFromJava.java",
         """
-                package com.rahulrav.app;
+                package com.kwang0.lintcustomization.app;
                 
                 import kotlin.UseExperimental;
                 
@@ -222,7 +222,7 @@ object Stubs {
     val LOG_WTF_KT = kotlin(
         "com/kwang0/lintcustomization/app/WhatATerribleFailure.kt",
         """
-                package com.rahulrav.app
+                package com.kwang0.lintcustomization.app
                 
                 import android.util.Log
                 
@@ -241,7 +241,7 @@ object Stubs {
     val LOG_WTF_JAVA = java(
         "com/kwang0/lintcustomization/app/WhatATerribleFailureJava.java",
         """
-                package com.rahulrav.app;
+                package com.kwang0.lintcustomization.app;
                 
                 import android.util.Log;
                 

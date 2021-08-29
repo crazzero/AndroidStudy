@@ -58,7 +58,7 @@ class DetectorTest {
             .run()
             .expect(
                 """
-                        project0: Error: Only an android.app.Application can implement androidx.work.Configuration.Provider [BadConfigurationProviderId]
+                        app: Error: Only an android.app.Application can implement androidx.work.Configuration.Provider [BadConfigurationProviderId]
                         1 errors, 0 warnings
                         """.trimIndent()
             )
@@ -157,7 +157,7 @@ src/com/kwang0/lintcustomization/app/UseTimeTravelExperimentFromJava.java:18: Er
         val expected = """
 src/com/kwang0/lintcustomization/app/WhatATerribleFailure.kt:7: Error: Usage of Log.wtf() is prohibited [LogWtfUsageError]
         Log.wtf(clazz.name, message)
-            ~~~~~~~~~~~~~~~~~~~~~~~~
+            ~~~
 1 errors, 0 warnings
             """.trimIndent()
         /* ktlint-enable max-line-length */
