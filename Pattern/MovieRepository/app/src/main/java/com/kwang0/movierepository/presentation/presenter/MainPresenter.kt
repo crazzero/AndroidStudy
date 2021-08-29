@@ -67,7 +67,7 @@ class MainPresenter(
         view.navigateToDetailScreen(getSelectedMovieId())
     }
 
-    fun saveMovies(movieList: List<Movie>) {
+    private fun saveMovies(movieList: List<Movie>) {
         this.movieList = movieList
     }
 
@@ -79,11 +79,11 @@ class MainPresenter(
         this.selectedMovieId = selectedMovieId
     }
 
-    fun moviesListIsEmpty(): Boolean {
+    private fun moviesListIsEmpty(): Boolean {
         return movieList.isEmpty()
     }
 
-    fun getSelectedMovieId(): Int {
+    private fun getSelectedMovieId(): Int {
         return selectedMovieId
     }
 
