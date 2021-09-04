@@ -1,4 +1,4 @@
-package com.kwang0.fragment.ui.main
+package com.kwang0.fragment.ui.first
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle

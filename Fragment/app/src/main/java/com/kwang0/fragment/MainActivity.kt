@@ -2,7 +2,7 @@ package com.kwang0.fragment
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.kwang0.fragment.ui.main.FirstFragment
+import com.kwang0.fragment.ui.first.FirstFragment
 
 class MainActivity : AppCompatActivity() {
 
