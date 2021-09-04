@@ -2,7 +2,7 @@ package com.kwang0.fragment
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.kwang0.fragment.ui.main.MainFragment
+import com.kwang0.fragment.ui.main.FirstFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.main_activity)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.container, MainFragment.newInstance())
+                .replace(R.id.container, FirstFragment.newInstance())
                 .commitNow()
         }
     }

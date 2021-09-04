@@ -8,24 +8,24 @@ import android.view.View
 import android.view.ViewGroup
 import com.kwang0.fragment.R
 
-class MainFragment : Fragment() {
+class FirstFragment : Fragment() {
 
     companion object {
-        fun newInstance() = MainFragment()
+        fun newInstance() = FirstFragment()
     }
 
-    private lateinit var viewModel: MainViewModel
+    private lateinit var viewModel: FirstViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.main_fragment, container, false)
+        return inflater.inflate(R.layout.first_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(FirstViewModel::class.java)
         // TODO: Use the ViewModel
     }
 
