@@ -1,11 +1,10 @@
 package com.kwang0.fragment.ui.third
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.kwang0.fragment.R
+import androidx.fragment.app.Fragment
 import com.kwang0.fragment.databinding.ThirdFragmentBinding
 
 class ThirdFragment : Fragment() {
@@ -48,5 +47,7 @@ class ThirdFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+
+        fun newInstance() = ThirdFragment()
     }
 }
