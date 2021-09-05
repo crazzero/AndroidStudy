@@ -10,10 +10,6 @@ import com.kwang0.fragment.R
 
 class FirstFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = FirstFragment()
-    }
-
     private lateinit var viewModel: FirstViewModel
 
     override fun onCreateView(
@@ -26,7 +22,9 @@ class FirstFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(FirstViewModel::class.java)
-        // TODO: Use the ViewModel
     }
 
+    companion object {
+        fun newInstance() = FirstFragment()
+    }
 }

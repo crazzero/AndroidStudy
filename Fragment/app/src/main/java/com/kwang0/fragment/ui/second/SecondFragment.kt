@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.kwang0.fragment.R
 
 class SecondFragment : Fragment() {
-    // TODO: Rename and change types of parameters
+
     private var param1: String? = null
     private var param2: String? = null
 
