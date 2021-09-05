@@ -3,4 +3,8 @@
     <string name="first_fragment_title">FirstFragment</string>
     <string name="second_fragment_title">SecondFragment</string>
     <string name="third_fragment_title">ThirdFragment</string>
+    <string name="fragment_a_title">FragmentA</string>
+    <string name="fragment_b_title">FragmentB</string>
+    <string name="btn_start_a">Start A</string>
+    <string name="btn_start_b">Start B</string>
 </resources>
