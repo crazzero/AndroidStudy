@@ -12,6 +12,9 @@ import com.kwang0.fragment.ui.third.ThirdFragment
 class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListener {
 
     private lateinit var binding: MainActivityBinding
+    private var firstFragment = FirstFragment.newInstance()
+    private var secondFragment = SecondFragment.newInstance()
+    private var thirdFragment = ThirdFragment.newInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,6 +22,14 @@ class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListen
         setContentView(binding.root)
 
         binding.mainNavigation.setOnItemSelectedListener(this)
+
+        supportFragmentManager.beginTransaction()
+            .add(R.id.mainContainer, firstFragment)
+            .commit()
+
+        // 불필요한 작업을 취소시켜주게 만들어줌
+//        supportFragmentManager.beginTransaction()
+//            .setReorderingAllowed(true)
 
         if (savedInstanceState == null) {
 
@@ -62,9 +73,9 @@ class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListen
         supportFragmentManager.beginTransaction()
             .replace(R.id.mainContainer,
                 when (item.itemId) {
-                    R.id.first_item -> FirstFragment.newInstance()
-                    R.id.second_item -> SecondFragment.newInstance()
-                    R.id.third_item -> ThirdFragment.newInstance()
+                    R.id.first_item -> firstFragment
+                    R.id.second_item -> secondFragment
+                    R.id.third_item -> thirdFragment
                     else -> error("Not Expected exception")
                 }
             )
