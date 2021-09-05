@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".ui.third.ThirdFragment">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/third_fragment" />
+        android:text="@string/third_fragment_title" />
 
 </FrameLayout>
