@@ -28,17 +28,15 @@ class FirstFragment : Fragment() {
 
         binding.firstText.text = "${context?.getString(R.string.first_fragment_title)} ${count++}"
         binding.buttonAddFirstA.setOnClickListener {
-            parentFragmentManager
+            childFragmentManager
                 .beginTransaction()
                 .replace(R.id.firstContainer, FirstAFragment.newInstance())
-                .addToBackStack(null)
                 .commit()
         }
         binding.buttonAddFirstB.setOnClickListener {
-            parentFragmentManager
+            childFragmentManager
                 .beginTransaction()
                 .replace(R.id.firstContainer, FirstBFragment.newInstance())
-                .addToBackStack(null)
                 .commit()
         }
 

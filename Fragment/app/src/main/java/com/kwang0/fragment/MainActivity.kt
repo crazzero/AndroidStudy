@@ -69,17 +69,27 @@ class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListen
      *     appear non-interactive.
      */
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        val selectedFragment = when (item.itemId) {
+            R.id.first_item -> firstFragment
+            R.id.second_item -> secondFragment
+            R.id.third_item -> thirdFragment
+            else -> error("Not Expected exception")
+        }
 
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.mainContainer,
-                when (item.itemId) {
-                    R.id.first_item -> firstFragment
-                    R.id.second_item -> secondFragment
-                    R.id.third_item -> thirdFragment
-                    else -> error("Not Expected exception")
-                }
-            )
-            .commit()
+        supportFragmentManager.beginTransaction().also {
+            if (supportFragmentManager.fragments.contains(selectedFragment)) {
+                it.show(selectedFragment)
+            } else {
+                it.add(R.id.mainContainer, selectedFragment)
+            }
+        }.commit()
+
+        supportFragmentManager.fragments.filter { it != selectedFragment }.forEach {
+            supportFragmentManager.beginTransaction()
+                .hide(it)
+                .commit()
+        }
+
         return true
     }
 }
