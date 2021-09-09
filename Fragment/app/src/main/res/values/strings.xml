@@ -7,4 +7,5 @@
     <string name="fragment_b_title">FragmentB</string>
     <string name="btn_start_a">Start A</string>
     <string name="btn_start_b">Start B</string>
+    <string name="btn_start_second">Start Second</string>
 </resources>
