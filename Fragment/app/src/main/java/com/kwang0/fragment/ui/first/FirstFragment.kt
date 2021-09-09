@@ -31,12 +31,21 @@ class FirstFragment : Fragment() {
             childFragmentManager
                 .beginTransaction()
                 .replace(R.id.firstContainer, FirstAFragment.newInstance())
+                .addToBackStack(null)
                 .commit()
         }
         binding.buttonAddFirstB.setOnClickListener {
             childFragmentManager
                 .beginTransaction()
                 .replace(R.id.firstContainer, FirstBFragment.newInstance())
+                .addToBackStack(null)
+                .commit()
+        }
+        binding.buttonStartFirstSecond.setOnClickListener {
+            parentFragmentManager
+                .beginTransaction()
+                .replace(R.id.rootContainer, FirstSecondFragment.newInstance())
+                .addToBackStack(null)
                 .commit()
         }
 
