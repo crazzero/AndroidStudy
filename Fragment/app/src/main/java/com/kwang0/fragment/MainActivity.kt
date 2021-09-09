@@ -1,8 +1,8 @@
 package com.kwang0.fragment
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.navigation.NavigationBarView
 import com.kwang0.fragment.databinding.MainActivityBinding
 import com.kwang0.fragment.ui.first.FirstFragment
@@ -91,5 +91,18 @@ class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListen
         }
 
         return true
+    }
+
+    override fun onBackPressed() {
+        supportFragmentManager.fragments.forEach {
+            if (it.isVisible) {
+                val childFragment = it.childFragmentManager
+                if (childFragment.backStackEntryCount > 0) {
+                    childFragment.popBackStack()
+                    return
+                }
+            }
+        }
+        super.onBackPressed()
     }
 }
