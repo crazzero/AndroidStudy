@@ -5,6 +5,7 @@
     <string name="third_fragment_title">ThirdFragment</string>
     <string name="fragment_a_title">FragmentA</string>
     <string name="fragment_b_title">FragmentB</string>
+    <string name="fragment_first_second_title">First Second Fragment</string>
     <string name="btn_start_a">Start A</string>
     <string name="btn_start_b">Start B</string>
     <string name="btn_start_second">Start Second</string>

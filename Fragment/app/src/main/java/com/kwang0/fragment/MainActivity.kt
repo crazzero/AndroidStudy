@@ -94,6 +94,10 @@ class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListen
     }
 
     override fun onBackPressed() {
+        if (supportFragmentManager.backStackEntryCount > 0) {
+            supportFragmentManager.popBackStack()
+            return
+        }
         supportFragmentManager.fragments.forEach {
             if (it.isVisible) {
                 val childFragment = it.childFragmentManager
