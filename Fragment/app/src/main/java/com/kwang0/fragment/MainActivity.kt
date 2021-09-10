@@ -1,6 +1,7 @@
 package com.kwang0.fragment
 
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.navigation.NavigationBarView
@@ -69,6 +70,10 @@ class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListen
      *     appear non-interactive.
      */
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        Log.e("MainActivity", "first isVisible ${firstFragment.isVisible}")
+        Log.e("MainActivity", "second isVisible ${secondFragment.isVisible}")
+        Log.e("MainActivity", "third isVisible ${thirdFragment.isVisible}")
+
         val selectedFragment = when (item.itemId) {
             R.id.first_item -> firstFragment
             R.id.second_item -> secondFragment
