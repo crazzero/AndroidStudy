@@ -24,15 +24,14 @@ class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListen
 
         binding.mainNavigation.setOnItemSelectedListener(this)
 
-        supportFragmentManager.beginTransaction()
-            .add(R.id.mainContainer, firstFragment)
-            .commit()
-
         // 불필요한 작업을 취소시켜주게 만들어줌
 //        supportFragmentManager.beginTransaction()
 //            .setReorderingAllowed(true)
 
         if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .add(R.id.mainContainer, firstFragment)
+                .commit()
 
             // commit 비동기처리 && save state 에 자유롭지 않음
 //            supportFragmentManager.beginTransaction()
