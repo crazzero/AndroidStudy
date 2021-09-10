@@ -44,11 +44,27 @@ class FirstFragment : Fragment() {
         binding.buttonStartFirstSecond.setOnClickListener {
             parentFragmentManager
                 .beginTransaction()
+//                .setCustomAnimations(
+//                    R.anim.enter_from_right,
+//                    R.anim.exit_to_left,
+//                    R.anim.enter_from_left,
+//                    R.anim.exit_to_right,
+//                )
+//                .setCustomAnimations(
+//                    R.anim.enter_from_bottom,
+//                    R.anim.exit_to_top,
+//                    R.anim.enter_from_top,
+//                    R.anim.exit_to_bottom,
+//                )
                 .setCustomAnimations(
-                    R.anim.enter_from_right,
-                    R.anim.exit_to_left,
-                    R.anim.enter_from_left,
-                    R.anim.exit_to_right,
+                    R.anim.fade_in,
+                    R.anim.fade_out,
+                )
+                .setCustomAnimations(
+                    R.anim.fade_in,
+                    R.anim.fade_out,
+                    R.anim.fade_in,
+                    R.anim.fade_out,
                 )
                 .replace(R.id.rootContainer, FirstSecondFragment.newInstance())
                 .addToBackStack(null)
