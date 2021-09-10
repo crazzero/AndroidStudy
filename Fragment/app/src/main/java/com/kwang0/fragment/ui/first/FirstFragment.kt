@@ -44,6 +44,12 @@ class FirstFragment : Fragment() {
         binding.buttonStartFirstSecond.setOnClickListener {
             parentFragmentManager
                 .beginTransaction()
+                .setCustomAnimations(
+                    R.anim.enter_from_right,
+                    R.anim.exit_to_left,
+                    R.anim.enter_from_left,
+                    R.anim.exit_to_right,
+                )
                 .replace(R.id.rootContainer, FirstSecondFragment.newInstance())
                 .addToBackStack(null)
                 .commit()
