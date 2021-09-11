@@ -1,4 +1,7 @@
 package com.kwang0.fragment.ui.third
 
-class ThirdViewModel {
+import androidx.lifecycle.ViewModel
+
+class ThirdViewModel : ViewModel() {
+
 }

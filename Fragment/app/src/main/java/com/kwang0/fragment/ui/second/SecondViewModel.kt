@@ -1,4 +1,7 @@
 package com.kwang0.fragment.ui.second
 
-class SecondViewModel {
+import androidx.lifecycle.ViewModel
+
+class SecondViewModel : ViewModel() {
+
 }
