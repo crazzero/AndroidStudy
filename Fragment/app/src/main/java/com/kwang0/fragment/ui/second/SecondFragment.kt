@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.kwang0.fragment.R
+import androidx.fragment.app.viewModels
 import com.kwang0.fragment.databinding.SecondFragmentBinding
 
 class SecondFragment : Fragment() {
@@ -14,6 +14,7 @@ class SecondFragment : Fragment() {
     private var param2: String? = null
     private var _binding: SecondFragmentBinding? = null
     private val binding get() = _binding!!
+    private val viewModel by viewModels<SecondViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +30,15 @@ class SecondFragment : Fragment() {
     ): View? {
         _binding = SecondFragmentBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.textSecondFragment.setOnClickListener {
+            viewModel.updateFragmentCount
+        }
+        binding.textSecondFragment.text = "${viewModel.updateFragmentCount.value}"
     }
 
     override fun onDestroyView() {
