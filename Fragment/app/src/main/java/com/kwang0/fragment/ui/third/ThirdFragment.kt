@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import com.kwang0.fragment.databinding.ThirdFragmentBinding
 
 class ThirdFragment : Fragment() {
@@ -13,6 +14,7 @@ class ThirdFragment : Fragment() {
     private var param2: String? = null
     private var _binding: ThirdFragmentBinding? = null
     private val binding get() = _binding!!
+    private val viewModel by viewModels<ThirdViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +30,15 @@ class ThirdFragment : Fragment() {
     ): View? {
         _binding = ThirdFragmentBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.textThirdFragment.setOnClickListener {
+            viewModel.updateFragmentCount
+        }
+        binding.textThirdFragment.text = "${viewModel.updateFragmentCount.value}"
     }
 
     override fun onDestroyView() {
