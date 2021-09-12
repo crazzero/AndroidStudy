@@ -8,6 +8,7 @@
     tools:context=".ui.second.SecondFragment">
 
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textSecondFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
