@@ -36,9 +36,11 @@ class SecondFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.textSecondFragment.setOnClickListener {
-            viewModel.updateFragmentCount
+            viewModel.insertCountTwo()
         }
-        binding.textSecondFragment.text = "${viewModel.updateFragmentCount.value}"
+        viewModel.updateFragmentCount.observe(viewLifecycleOwner, { count ->
+            binding.textSecondFragment.text = "$count"
+        })
     }
 
     override fun onDestroyView() {

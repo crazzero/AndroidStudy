@@ -36,9 +36,11 @@ class ThirdFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.textThirdFragment.setOnClickListener {
-            viewModel.updateFragmentCount
+            viewModel.insertCountThree()
         }
-        binding.textThirdFragment.text = "${viewModel.updateFragmentCount.value}"
+        viewModel.updateFragmentCount.observe(viewLifecycleOwner, { count ->
+            binding.textThirdFragment.text = "$count"
+        })
     }
 
     override fun onDestroyView() {
