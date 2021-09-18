@@ -11,6 +11,6 @@ import retrofit2.Retrofit
 object TestApiModule {
     @Provides
     fun provideTestApi(): TestApi {
-        return Retrofit.Builder().baseUrl("ip_address").build().create(TestApi::class.java)
+        return Retrofit.Builder().baseUrl("networkUrl").build().create(TestApi::class.java)
     }
 }
