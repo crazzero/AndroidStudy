@@ -22,6 +22,11 @@ class MainActivity : ComponentActivity() {
         // Replace from setContentView(layoutResId: Int)
         // setContent must have (@Composable) -> Unit type component UI
         setContent {
+            BaseContainer {
+                Surface(color = MaterialTheme.colors.background) {
+                    Greeting(listOf("kwang0"))
+                }
+            }
             ComposeTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(color = MaterialTheme.colors.background) {
