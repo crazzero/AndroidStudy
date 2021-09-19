@@ -7,6 +7,7 @@ import androidx.compose.animation.animateColorAsState
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material.Divider
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
@@ -25,6 +26,11 @@ class MainActivity : ComponentActivity() {
         setContent {
             BaseContainer {
                 Surface(color = MaterialTheme.colors.background) {
+                    GreetingWithDivider()
+                }
+            }
+            BaseContainer {
+                Surface(color = MaterialTheme.colors.background) {
                     GreetingList(listOf("kwang0"))
                 }
             }
@@ -36,6 +42,20 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+}
+
+@Composable
+fun GreetingWithDivider() {
+    Column {
+        Greeting(name = "kwang0")
+        Divider(color = Color.Black)
+        Greeting(name = "")
+    }
+}
+
+@Composable
+fun Greeting(name: String) {
+    Text(text = "Hello $name!")
 }
 
 @Composable
