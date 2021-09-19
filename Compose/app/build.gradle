@@ -8,6 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.kwang0.compose"
+        // minimum sdk must be >= 21 because of compose
         minSdk 21
         targetSdk 31
         versionCode 1
