@@ -38,6 +38,7 @@ android {
         compose true
     }
     composeOptions {
+        // different compiler extension version cause different action for compose component
         kotlinCompilerExtensionVersion compose_version
         kotlinCompilerVersion '1.5.21'
     }
