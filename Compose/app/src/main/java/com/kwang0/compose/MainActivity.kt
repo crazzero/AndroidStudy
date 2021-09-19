@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -24,13 +25,13 @@ class MainActivity : ComponentActivity() {
         setContent {
             BaseContainer {
                 Surface(color = MaterialTheme.colors.background) {
-                    Greeting(listOf("kwang0"))
+                    GreetingList(listOf("kwang0"))
                 }
             }
             ComposeTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(color = MaterialTheme.colors.background) {
-                    Greeting(listOf("kwang0"))
+                    GreetingList(listOf("kwang0"))
                 }
             }
         }
@@ -38,7 +39,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(names: List<String>) {
+fun GreetingList(names: List<String>) {
     val isSelected by remember { mutableStateOf(false) }
     val backgroundColor by animateColorAsState(
         if (isSelected) {
@@ -62,7 +63,7 @@ fun Greeting(names: List<String>) {
 @Composable
 fun DefaultPreview() {
     ComposeTheme {
-        Greeting(listOf(
+        GreetingList(listOf(
             "sample1",
             "sample2",
         ))
