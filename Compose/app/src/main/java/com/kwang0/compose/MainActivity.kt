@@ -7,10 +7,7 @@ import androidx.compose.animation.animateColorAsState
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.Divider
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
+import androidx.compose.material.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -41,6 +38,36 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+    }
+}
+
+@Composable
+fun ComposeCounter(names: List<String> = listOf("Line 1", "Line 2")) {
+    val counterState = remember { mutableStateOf(0) }
+
+    Column {
+        names.forEach {
+            Greeting(name = it)
+            Divider(color = Color.Black)
+        }
+        Counter(
+            count = counterState.value,
+            updateCount = { newCount ->
+                counterState.value = newCount
+            },
+        )
+    }
+}
+
+@Composable
+fun Counter(count: Int, updateCount: (Int) -> Unit) {
+    Button(
+        onClick = { updateCount(count - 1) },
+        colors = ButtonDefaults.buttonColors(
+            backgroundColor = if (count > 5) Color.Green else Color.White
+        )
+    ) {
+        Text("I've been clicked $count times")
     }
 }
 
