@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
             ComposeTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(color = MaterialTheme.colors.background) {
-                    Greeting("kwang0")
+                    Greeting(listOf("kwang0"))
                 }
             }
         }
@@ -26,14 +26,19 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
+fun Greeting(names: List<String>) {
+    names.forEach { name ->
+        Text(text = "Hello $name!")
+    }
 }
 
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
     ComposeTheme {
-        Greeting("kwang0")
+        Greeting(listOf(
+            "sample1",
+            "sample2",
+        ))
     }
 }
