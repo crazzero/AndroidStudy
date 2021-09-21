@@ -1,6 +1,7 @@
 package com.kwang0.compose.ui.sample
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Card
@@ -8,6 +9,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.kwang0.compose.R
@@ -164,5 +166,33 @@ fun ArtistCard7(
                 contentDescription = "Content Description",
             )
         }
+    }
+}
+
+@Composable
+fun ArtistCard8(artist: Artist) {
+    Row(
+        modifier = Modifier.fillMaxWidth()
+    ) {
+        Image(
+            painterResource(R.drawable.ic_launcher_foreground),
+            contentDescription = "Content Description",
+            modifier = Modifier.weight(2f),
+        )
+        Column(
+            modifier = Modifier.weight(1f)
+        ) {
+            Text(artist.name)
+            Text(artist.lastSeenOnline)
+        }
+    }
+}
+
+@Composable
+fun MatchParentSizeComposable() {
+    Box {
+        Spacer(Modifier.matchParentSize().background(Color.LightGray))
+//        Spacer(Modifier.fillMaxSize().background(Color.LightGray))
+        ArtistCard3(Artist(name = "Alfred Sisley", lastSeenOnline = "3 minutes ago"))
     }
 }
