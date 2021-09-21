@@ -120,3 +120,49 @@ fun ArtistCard6(
         }
     }
 }
+
+@Composable
+fun ArtistCard7(
+    artist: Artist,
+    onClick: () -> Unit,
+) {
+    val padding = 16.dp
+    Column(
+        Modifier
+            .padding(padding)
+            .clickable(onClick = onClick)
+            .fillMaxWidth()
+    ) {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier.size(width = 400.dp, height = 100.dp),
+        ) {
+            Image(
+                painterResource(R.drawable.ic_launcher_foreground),
+                contentDescription = "Content Description",
+                modifier = Modifier.requiredSize(150.dp),
+//                modifier = Modifier.fillMaxHeight(),
+//                modifier = Modifier.fillMaxWidth(),
+//                modifier = Modifier.fillMaxSize(),
+            )
+            Column {
+                Text(
+                    artist.name,
+                    modifier = Modifier.paddingFromBaseline(top = 50.dp),
+                )
+                Text(
+                    artist.lastSeenOnline,
+                    modifier = Modifier.offset(x = 4.dp),
+//                    modifier = Modifier.absoluteOffset(x = 4.dp),
+                )
+            }
+        }
+        Spacer(Modifier.size(padding))
+        Card(elevation = 4.dp) {
+            Image(
+                painterResource(R.drawable.ic_launcher_background),
+                contentDescription = "Content Description",
+            )
+        }
+    }
+}
