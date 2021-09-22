@@ -1,9 +1,10 @@
 package com.kwang0.di.feature
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.kwang0.di.R
+import com.kwang0.di.databinding.ActivityMainBinding
 import com.kwang0.di.test.SomeClass
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
@@ -11,11 +12,22 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class MainActivity : BaseActivity() {
 
+    private lateinit var binding: ActivityMainBinding
+
     @Inject lateinit var someClass: SomeClass
     private val mainViewModel : MainViewModel by viewModels()
+    private var mainAdapter: MainAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater, null, false)
+        setContentView(binding.root)
+
+        mainAdapter = MainAdapter()
+        binding.recyclerMain.apply {
+            itemAnimator = null
+            layoutManager = LinearLayoutManager(this@MainActivity)
+            adapter = mainAdapter
+        }
     }
 }
