@@ -10,7 +10,7 @@ class MainAdapter :
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): MainViewHolder {
         if (viewGroup is RecyclerView) {
-            return MainViewHolder(viewGroup)
+            return MainViewHolder.getInstance(viewGroup)
         } else {
             throw RuntimeException("Not bound to RecyclerView")
         }
@@ -22,5 +22,9 @@ class MainAdapter :
 
     override fun getItemCount(): Int {
         return items.count()
+    }
+
+    fun setItems(items: List<String>) {
+        this.items = items
     }
 }

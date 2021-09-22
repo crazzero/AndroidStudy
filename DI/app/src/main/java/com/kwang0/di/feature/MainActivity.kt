@@ -23,7 +23,9 @@ class MainActivity : BaseActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater, null, false)
         setContentView(binding.root)
 
-        mainAdapter = MainAdapter()
+        mainAdapter = MainAdapter().also {
+            it.setItems(listOf("1", "2", "3"))
+        }
         binding.recyclerMain.apply {
             itemAnimator = null
             layoutManager = LinearLayoutManager(this@MainActivity)

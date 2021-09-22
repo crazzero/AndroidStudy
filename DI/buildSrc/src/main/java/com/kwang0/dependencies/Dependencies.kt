@@ -1,7 +1,7 @@
 package com.kwang0.dependencies
 
 object Versions {
-    const val appId = "soup.movie"
+    const val appId = "com.kwang0.di"
     const val minSdk = 23
     const val targetSdk = 30
     const val compileSdk = 30
