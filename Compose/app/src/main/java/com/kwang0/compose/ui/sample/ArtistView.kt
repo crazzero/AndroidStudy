@@ -4,11 +4,13 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.Card
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
@@ -182,6 +184,28 @@ fun ArtistCard8(artist: Artist) {
         Column(
             modifier = Modifier.weight(1f)
         ) {
+            Text(artist.name)
+            Text(artist.lastSeenOnline)
+        }
+    }
+}
+
+@Composable
+fun ArtistCard9(artist: Artist) {
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.End
+    ) {
+        Image(
+            painterResource(R.drawable.ic_launcher_foreground),
+            contentDescription = "Content Description",
+            modifier = Modifier
+            // Set image size to 40 dp
+            .size(40.dp) 
+            // Clip image to be shaped as a circle
+            .clip(CircleShape)
+        )
+        Column {
             Text(artist.name)
             Text(artist.lastSeenOnline)
         }
