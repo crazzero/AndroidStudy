@@ -9,7 +9,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
     @Inject lateinit var someClass: SomeClass
     private val mainViewModel : MainViewModel by viewModels()
