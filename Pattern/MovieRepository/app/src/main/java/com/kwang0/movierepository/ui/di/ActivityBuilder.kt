@@ -1,4 +1,4 @@
-package com.kwang0.movierepository.presentation.di
+package com.kwang0.movierepository.ui.di
 
 import com.kwang0.movierepository.ui.feature.detail.DetailActivityModule
 import com.kwang0.movierepository.ui.feature.main.MainActivityModule

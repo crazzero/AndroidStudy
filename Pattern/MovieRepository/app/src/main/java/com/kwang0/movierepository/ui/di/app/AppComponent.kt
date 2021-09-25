@@ -1,8 +1,8 @@
-package com.kwang0.movierepository.presentation.di.app
+package com.kwang0.movierepository.ui.di.app
 
 import android.app.Application
 import com.kwang0.movierepository.MoviesApp
-import com.kwang0.movierepository.presentation.di.ActivityBuilder
+import com.kwang0.movierepository.ui.di.ActivityBuilder
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector

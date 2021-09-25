@@ -1,6 +1,6 @@
 package com.kwang0.movierepository
 
-import com.kwang0.movierepository.presentation.di.app.DaggerAppComponent
+import com.kwang0.movierepository.ui.di.app.DaggerAppComponent
 import dagger.android.AndroidInjector
 import dagger.android.DaggerApplication
 

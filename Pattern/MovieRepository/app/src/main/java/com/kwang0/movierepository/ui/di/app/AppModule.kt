@@ -1,4 +1,4 @@
-package com.kwang0.movierepository.presentation.di.app
+package com.kwang0.movierepository.ui.di.app
 
 import android.app.Application
 import android.content.Context
@@ -11,7 +11,7 @@ import com.kwang0.movierepository.data.source.remote.*
 import com.kwang0.movierepository.domain.MoviesRepository
 import com.kwang0.movierepository.domain.executor.JobScheduler
 import com.kwang0.movierepository.domain.executor.UIScheduler
-import com.kwang0.movierepository.presentation.executor.UIThread
+import com.kwang0.movierepository.ui.base.UIThread
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit

@@ -1,4 +1,4 @@
-package com.kwang0.movierepository.presentation.di
+package com.kwang0.movierepository.ui.di
 
 import javax.inject.Scope
 
