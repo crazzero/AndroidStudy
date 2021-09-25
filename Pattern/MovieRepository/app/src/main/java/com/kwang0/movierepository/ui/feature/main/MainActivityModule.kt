@@ -1,4 +1,4 @@
-package com.kwang0.movierepository.presentation.di.main
+package com.kwang0.movierepository.ui.feature.main
 
 import com.kwang0.movierepository.domain.interactor.UseCaseFactory
 import com.kwang0.movierepository.ui.feature.main.MainContract

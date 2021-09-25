@@ -1,7 +1,7 @@
 package com.kwang0.movierepository.presentation.di
 
-import com.kwang0.movierepository.presentation.di.detail.DetailActivityModule
-import com.kwang0.movierepository.presentation.di.main.MainActivityModule
+import com.kwang0.movierepository.ui.feature.detail.DetailActivityModule
+import com.kwang0.movierepository.ui.feature.main.MainActivityModule
 import com.kwang0.movierepository.ui.feature.detail.DetailActivity
 import com.kwang0.movierepository.ui.feature.main.MainActivity
 import dagger.Module

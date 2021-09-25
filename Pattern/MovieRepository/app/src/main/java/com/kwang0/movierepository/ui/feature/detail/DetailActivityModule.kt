@@ -1,4 +1,4 @@
-package com.kwang0.movierepository.presentation.di.detail
+package com.kwang0.movierepository.ui.feature.detail
 
 import com.kwang0.movierepository.domain.interactor.UseCaseFactory
 import com.kwang0.movierepository.ui.feature.detail.DetailContract
