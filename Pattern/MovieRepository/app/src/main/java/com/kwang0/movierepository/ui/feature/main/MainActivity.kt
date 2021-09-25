@@ -1,10 +1,9 @@
-package com.kwang0.movierepository.presentation.view
+package com.kwang0.movierepository.ui.feature.main
 
 import android.os.Bundle
 import com.kwang0.movierepository.R
 import com.kwang0.movierepository.extension.navigateToDetail
-import com.kwang0.movierepository.presentation.MoviesAdapter
-import com.kwang0.movierepository.presentation.contract.MainContract
+import com.kwang0.movierepository.presentation.view.BaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 

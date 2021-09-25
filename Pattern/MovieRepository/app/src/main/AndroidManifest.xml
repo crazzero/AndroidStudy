@@ -18,10 +18,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieRepository">
         <activity
-            android:name=".presentation.view.DetailActivity"
+            android:name=".ui.feature.detail.DetailActivity"
             android:exported="true" />
         <activity
-            android:name=".presentation.view.MainActivity"
+            android:name=".ui.feature.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

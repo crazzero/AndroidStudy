@@ -1,4 +1,4 @@
-package com.kwang0.movierepository.presentation.contract
+package com.kwang0.movierepository.ui.feature.detail
 
 import com.kwang0.movierepository.base.BasePresenter
 import com.kwang0.movierepository.base.BaseView

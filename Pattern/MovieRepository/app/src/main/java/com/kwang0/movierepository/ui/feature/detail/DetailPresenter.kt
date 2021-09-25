@@ -1,10 +1,9 @@
-package com.kwang0.movierepository.presentation.presenter
+package com.kwang0.movierepository.ui.feature.detail
 
 import com.kwang0.movierepository.domain.Movie
 import com.kwang0.movierepository.domain.Observer
 import com.kwang0.movierepository.domain.interactor.GetMovie
 import com.kwang0.movierepository.domain.interactor.UseCaseFactory
-import com.kwang0.movierepository.presentation.contract.DetailContract
 import com.kwang0.movierepository.utils.Formatter
 import io.reactivex.disposables.CompositeDisposable
 

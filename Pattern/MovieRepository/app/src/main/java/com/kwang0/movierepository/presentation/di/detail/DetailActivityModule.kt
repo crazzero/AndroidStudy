@@ -1,9 +1,9 @@
 package com.kwang0.movierepository.presentation.di.detail
 
 import com.kwang0.movierepository.domain.interactor.UseCaseFactory
-import com.kwang0.movierepository.presentation.contract.DetailContract
-import com.kwang0.movierepository.presentation.presenter.DetailPresenter
-import com.kwang0.movierepository.presentation.view.DetailActivity
+import com.kwang0.movierepository.ui.feature.detail.DetailContract
+import com.kwang0.movierepository.ui.feature.detail.DetailPresenter
+import com.kwang0.movierepository.ui.feature.detail.DetailActivity
 import com.kwang0.movierepository.utils.Formatter
 import dagger.Module
 import dagger.Provides

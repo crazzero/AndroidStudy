@@ -1,10 +1,9 @@
-package com.kwang0.movierepository.presentation
+package com.kwang0.movierepository.ui.feature.main
 
 import android.view.*
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.kwang0.movierepository.R
-import com.kwang0.movierepository.presentation.contract.MainContract
 import com.squareup.picasso.Picasso
 
 

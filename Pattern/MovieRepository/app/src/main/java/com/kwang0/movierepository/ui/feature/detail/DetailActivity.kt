@@ -1,12 +1,11 @@
-package com.kwang0.movierepository.presentation.view
+package com.kwang0.movierepository.ui.feature.detail
 
 import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import com.kwang0.movierepository.R
-import com.kwang0.movierepository.presentation.contract.DetailContract
+import com.kwang0.movierepository.presentation.view.BaseActivity
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_detail.*
 import kotlinx.android.synthetic.main.content_detail.*
