@@ -1,4 +1,4 @@
-package com.kwang0.movierepository.presentation.view
+package com.kwang0.movierepository.ui.base
 
 import androidx.appcompat.app.AlertDialog
 import com.kwang0.movierepository.R

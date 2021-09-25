@@ -5,7 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import com.kwang0.movierepository.R
-import com.kwang0.movierepository.presentation.view.BaseActivity
+import com.kwang0.movierepository.ui.base.BaseActivity
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_detail.*
 import kotlinx.android.synthetic.main.content_detail.*

@@ -36,8 +36,8 @@ class AutofitRecyclerView: RecyclerView {
 
     override fun onMeasure(widthSpec: Int, heightSpec: Int) {
         super.onMeasure(widthSpec, heightSpec)
-        if(columnWidth>0){
-            manager.spanCount = Math.max(1, measuredWidth/columnWidth)
+        if(columnWidth > 0){
+            manager.spanCount = Math.max(1, measuredWidth / columnWidth)
         }
     }
 
