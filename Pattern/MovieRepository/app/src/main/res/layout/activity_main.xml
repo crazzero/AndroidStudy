@@ -33,7 +33,7 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" >
 
-        <com.kwang0.movierepository.ui.AutofitRecyclerView
+        <com.kwang0.movierepository.ui.view.AutofitRecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

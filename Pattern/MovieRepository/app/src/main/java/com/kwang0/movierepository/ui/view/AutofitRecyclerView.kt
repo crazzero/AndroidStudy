@@ -1,4 +1,4 @@
-package com.kwang0.movierepository.ui
+package com.kwang0.movierepository.ui.view
 
 import android.content.Context
 import android.util.AttributeSet
