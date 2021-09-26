@@ -33,7 +33,7 @@
                 <data android:scheme="http"
                     android:host="www.example.com"
                     android:pathPrefix="/kwang0" />
-                <!-- the leading "/" is required for pathPrefix-->
+                <!-- The leading "/" is required for pathPrefix-->
             </intent-filter>
             <intent-filter android:label="Custom scheme example">
                 <action android:name="android.intent.action.VIEW" />
@@ -43,6 +43,13 @@
                 <data android:scheme="example"
                     android:host="kwang0" />
             </intent-filter>
+            <!-- Multiple data in only one intent filter are merged
+                 (e.g. app://www.example.com, https://open.my.app)-->
+            <!-- <intent-filter>-->
+            <!--     ...-->
+            <!--     <data android:scheme="https" android:host="www.example.com" />-->
+            <!--     <data android:scheme="app" android:host="open.my.app" />-->
+            <!-- </intent-filter>-->
         </activity>
     </application>
 
