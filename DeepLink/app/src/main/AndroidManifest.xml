@@ -21,6 +21,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".DeepLinkActivity"
+            android:exported="true">
+            <intent-filter android:label="Http example">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/kwang0” -->
+                <data android:scheme="http"
+                    android:host="www.example.com"
+                    android:pathPrefix="/kwang0" />
+                <!-- the leading "/" is required for pathPrefix-->
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
