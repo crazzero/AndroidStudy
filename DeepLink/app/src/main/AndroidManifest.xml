@@ -35,6 +35,14 @@
                     android:pathPrefix="/kwang0" />
                 <!-- the leading "/" is required for pathPrefix-->
             </intent-filter>
+            <intent-filter android:label="Custom scheme example">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "example://kwang0” -->
+                <data android:scheme="example"
+                    android:host="kwang0" />
+            </intent-filter>
         </activity>
     </application>
 
