@@ -42,7 +42,9 @@ class MainViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), MainVi
         presenter = EntryPointAccessors.fromApplication(
             itemView.context.applicationContext,
             MainViewHolderEntryPoint::class.java
-        ).getPresenter()
+        ).getPresenter().apply {
+            setView(this@MainViewHolder)
+        }
 
 //        presenter =
 //            EntryPoints.get(
