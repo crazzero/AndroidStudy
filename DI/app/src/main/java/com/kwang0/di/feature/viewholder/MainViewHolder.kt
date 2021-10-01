@@ -11,11 +11,19 @@ import com.kwang0.di.feature.di.ViewHolderComponent
 import dagger.hilt.EntryPoint
 import dagger.hilt.EntryPoints
 import dagger.hilt.InstallIn
+import dagger.hilt.android.EntryPointAccessors
+import dagger.hilt.components.SingletonComponent
 
 class MainViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), MainViewHolderContract.ViewHolder {
 
+//    @EntryPoint
+//    @InstallIn(ViewHolderComponent::class)
+//    interface MainViewHolderEntryPoint {
+//        fun getPresenter(): MainViewHolderContract.Presenter
+//    }
+
     @EntryPoint
-    @InstallIn(ViewHolderComponent::class)
+    @InstallIn(SingletonComponent::class)
     interface MainViewHolderEntryPoint {
         fun getPresenter(): MainViewHolderContract.Presenter
     }
@@ -30,12 +38,17 @@ class MainViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), MainVi
 
     init {
         binding = HolderMainBinding.bind(itemView)
-//        presenter = EntryPointAccessors.fromView(itemView, MainViewHolderEntryPoint::class.java).getPresenter()
-        presenter =
-            EntryPoints.get(
-                ViewHolderComponent::class.java,
-                MainViewHolderEntryPoint::class.java
-            ).getPresenter()
+
+        presenter = EntryPointAccessors.fromApplication(
+            itemView.context.applicationContext,
+            MainViewHolderEntryPoint::class.java
+        ).getPresenter()
+
+//        presenter =
+//            EntryPoints.get(
+//                ViewHolderComponent::class.java,
+//                MainViewHolderEntryPoint::class.java
+//            ).getPresenter()
     }
 
     fun bind(text: String) {
