@@ -1,4 +1,4 @@
-package com.kwang0.di.feature.contract
+package com.kwang0.di.feature.viewholder
 
 interface MainViewHolderContract {
 

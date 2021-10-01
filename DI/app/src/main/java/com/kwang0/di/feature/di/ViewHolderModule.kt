@@ -1,9 +1,9 @@
 package com.kwang0.di.feature.di
 
 import androidx.recyclerview.widget.RecyclerView
-import com.kwang0.di.feature.MainViewHolder
-import com.kwang0.di.feature.MainViewHolderPresenter
-import com.kwang0.di.feature.contract.MainViewHolderContract
+import com.kwang0.di.feature.viewholder.MainViewHolder
+import com.kwang0.di.feature.viewholder.MainViewHolderPresenter
+import com.kwang0.di.feature.viewholder.MainViewHolderContract
 import dagger.Binds
 import dagger.Module
 import dagger.Provides

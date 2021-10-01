@@ -1,6 +1,6 @@
-package com.kwang0.di.feature
+package com.kwang0.di.feature.viewholder
 
-import com.kwang0.di.feature.contract.MainViewHolderContract
+import com.kwang0.di.feature.viewholder.MainViewHolderContract
 import javax.inject.Inject
 
 class MainViewHolderPresenter @Inject constructor(

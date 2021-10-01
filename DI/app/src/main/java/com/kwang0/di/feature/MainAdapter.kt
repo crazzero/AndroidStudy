@@ -2,6 +2,7 @@ package com.kwang0.di.feature
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.kwang0.di.feature.viewholder.MainViewHolder
 
 class MainAdapter :
     RecyclerView.Adapter<MainViewHolder>() {

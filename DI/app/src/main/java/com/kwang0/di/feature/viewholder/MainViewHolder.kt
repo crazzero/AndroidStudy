@@ -1,4 +1,4 @@
-package com.kwang0.di.feature
+package com.kwang0.di.feature.viewholder
 
 import android.util.Log
 import android.view.LayoutInflater
@@ -7,13 +7,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.kwang0.di.R
 import com.kwang0.di.databinding.HolderMainBinding
-import com.kwang0.di.feature.contract.MainViewHolderContract
 import com.kwang0.di.feature.di.ViewHolderComponent
 import dagger.hilt.EntryPoint
 import dagger.hilt.EntryPoints
 import dagger.hilt.InstallIn
-import dagger.hilt.android.AndroidEntryPoint
-import dagger.hilt.android.EntryPointAccessors
 import javax.inject.Inject
 
 class MainViewHolder @Inject constructor(itemView: View) : RecyclerView.ViewHolder(itemView), MainViewHolderContract.ViewHolder {
