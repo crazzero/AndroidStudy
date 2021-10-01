@@ -11,9 +11,8 @@ import com.kwang0.di.feature.di.ViewHolderComponent
 import dagger.hilt.EntryPoint
 import dagger.hilt.EntryPoints
 import dagger.hilt.InstallIn
-import javax.inject.Inject
 
-class MainViewHolder @Inject constructor(itemView: View) : RecyclerView.ViewHolder(itemView), MainViewHolderContract.ViewHolder {
+class MainViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), MainViewHolderContract.ViewHolder {
 
     @EntryPoint
     @InstallIn(ViewHolderComponent::class)
