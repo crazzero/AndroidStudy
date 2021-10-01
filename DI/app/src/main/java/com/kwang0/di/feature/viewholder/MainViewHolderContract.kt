@@ -7,6 +7,7 @@ interface MainViewHolderContract {
     }
 
     interface Presenter {
+        fun setView(view: ViewHolder)
         fun call()
     }
 }
