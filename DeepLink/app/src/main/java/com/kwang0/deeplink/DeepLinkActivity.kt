@@ -12,6 +12,7 @@ class DeepLinkActivity : AppCompatActivity() {
             .also {
                 it.putExtra("Deep Link", "worked!!")
                 startActivity(it)
+                finish()
             }
     }
 }
