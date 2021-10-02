@@ -11,5 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater, null, false)
         setContentView(binding.root)
+
+        binding.textMain.text = intent.extras?.getString("Deep Link", "Not Worked!!")
     }
 }
