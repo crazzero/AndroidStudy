@@ -9,27 +9,27 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 
-@Module
-@InstallIn(ViewHolderComponent::class)
-abstract class MainHolderModule{
-
-    @Binds
-    @ViewHolderScope
-    abstract fun bindHolder(view: MainViewHolder): MainViewHolderContract.ViewHolder
-
-    @Binds
-    @ViewHolderScope
-    abstract fun bindPresenter(impl: MainViewHolderPresenter): MainViewHolderContract.Presenter
-
-}
-
-@Module
-@InstallIn(ViewHolderComponent::class)
-object MainViewHolderModule{
-
-    @Provides
-    @ViewHolderScope
-    fun bindViewHolder(viewHolder: RecyclerView.ViewHolder): MainViewHolder {
-        return viewHolder as MainViewHolder
-    }
-}
+//@Module
+//@InstallIn(ViewHolderComponent::class)
+//abstract class MainHolderModule{
+//
+//    @Binds
+//    @ViewHolderScope
+//    abstract fun bindHolder(view: MainViewHolder): MainViewHolderContract.ViewHolder
+//
+//    @Binds
+//    @ViewHolderScope
+//    abstract fun bindPresenter(impl: MainViewHolderPresenter): MainViewHolderContract.Presenter
+//
+//}
+//
+//@Module
+//@InstallIn(ViewHolderComponent::class)
+//object MainViewHolderModule{
+//
+//    @Provides
+//    @ViewHolderScope
+//    fun bindViewHolder(viewHolder: RecyclerView.ViewHolder): MainViewHolder {
+//        return viewHolder as MainViewHolder
+//    }
+//}
