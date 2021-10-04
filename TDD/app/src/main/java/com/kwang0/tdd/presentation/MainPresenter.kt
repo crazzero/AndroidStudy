@@ -6,5 +6,6 @@ class MainPresenter @Inject constructor(
     private val view: MainContract.View
 ) : MainContract.Presenter {
     override fun fetch() {
+        view.onFetchResult()
     }
 }
