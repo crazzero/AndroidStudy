@@ -1,10 +1,10 @@
-package com.kwang0.tdd
+package com.kwang0.tdd.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.kwang0.tdd.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), MainContract.View {
 
     private lateinit var binding: ActivityMainBinding
 
@@ -12,5 +12,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater, null, false)
         setContentView(binding.root)
+    }
+
+    override fun onFetchResult() {
     }
 }
