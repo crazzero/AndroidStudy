@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity(), MainContract.View {
     private lateinit var binding: ActivityMainBinding
 
     @Inject
-    private lateinit var presenter: MainContract.Presenter
+    lateinit var presenter: MainContract.Presenter
 
     private var count: Int = 0
         set(value) {
