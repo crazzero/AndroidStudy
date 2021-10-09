@@ -15,19 +15,38 @@ class MainActivity : AppCompatActivity(), MainContract.View {
     @Inject
     private lateinit var presenter: MainContract.Presenter
 
+    private var count: Int = 0
+        set(value) {
+            field = value
+            binding.textCount.text = value.toString()
+        }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater, null, false)
         setContentView(binding.root)
 
-        binding.btnSystemTheme.setOnClickListener {
-            presenter.fetchTheme(ThemeMode.SYSTEM)
+        binding.btnPlusOne.setOnClickListener {
+            count++
         }
-        binding.btnLightTheme.setOnClickListener {
-            presenter.fetchTheme(ThemeMode.LIGHT)
+        binding.btnPlusTwo.setOnClickListener {
+            count += 2
         }
-        binding.btnDarkTheme.setOnClickListener {
-            presenter.fetchTheme(ThemeMode.DARK)
+        binding.btnMinusOne.setOnClickListener {
+            count--
         }
+        binding.btnMinusTwo.setOnClickListener {
+            count -= 2
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        count = presenter.getCount()
+    }
+
+    override fun onPause() {
+        presenter.saveCount(count)
+        super.onPause()
     }
 }

@@ -8,5 +8,7 @@ interface MainContract {
 
     interface Presenter {
         fun fetchTheme(themeMode: ThemeMode)
+        fun getCount(): Int
+        fun saveCount(count: Int)
     }
 }
