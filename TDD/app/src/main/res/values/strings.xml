@@ -3,4 +3,8 @@
     <string name="theme_system">system</string>
     <string name="theme_light">light</string>
     <string name="theme_dark">dark</string>
+    <string name="plus_one">PLUS ONE</string>
+    <string name="plus_two">PLUS TWO</string>
+    <string name="minus_one">MINUS ONE</string>
+    <string name="minus_two">MINUS TWO</string>
 </resources>

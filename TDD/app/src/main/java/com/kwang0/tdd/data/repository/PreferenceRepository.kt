@@ -6,6 +6,7 @@ import javax.inject.Inject
 
 interface PreferenceRepository {
     var themeMode: ThemeMode
+    var count: Int
 }
 
 class PreferenceRepositoryImpl @Inject constructor(
@@ -15,5 +16,11 @@ class PreferenceRepositoryImpl @Inject constructor(
         get() = localPreferenceDataSource.themeMode
         set(value) {
             localPreferenceDataSource.themeMode = value
+        }
+
+    override var count: Int
+        get() = localPreferenceDataSource.count
+        set(value) {
+            localPreferenceDataSource.count = value
         }
 }

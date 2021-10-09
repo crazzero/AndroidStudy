@@ -9,22 +9,57 @@
     android:orientation="vertical"
     tools:context=".presentation.MainActivity">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnSystemTheme"
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textCount"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/theme_system" />
+        android:layout_margin="32dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        tools:text="1" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnLightTheme"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/theme_light" />
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnDarkTheme"
-        android:layout_width="wrap_content"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPlusOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus_one" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPlusTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus_two" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/theme_dark" />
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMinusOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minus_one" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMinusTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minus_two" />
+
+    </LinearLayout>
 
 </LinearLayout>
