@@ -1,11 +1,12 @@
 package com.kwang0.tdd.presentation
 
+import com.kwang0.tdd.enum.ThemeMode
+
 interface MainContract {
     interface View {
-        fun onFetchResult()
     }
 
     interface Presenter {
-        fun fetch()
+        fun fetchTheme(themeMode: ThemeMode)
     }
 }
