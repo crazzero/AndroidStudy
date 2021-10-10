@@ -39,6 +39,12 @@ object Libs {
         const val hiltPlugin = "com.google.dagger:hilt-android-gradle-plugin:$version"
     }
 
+    object Koin {
+        private const val version = "3.0.2"
+        const val koin = "io.insert-koin:koin-android:$version"
+        const val koinPlugin = "io.insert-koin:koin-gradle-plugin:$version"
+    }
+
     object Google {
         const val gmsPlugin = "com.google.gms:google-services:4.3.8"
         const val material = "com.google.android.material:material:1.4.0"

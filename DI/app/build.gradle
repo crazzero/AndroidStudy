@@ -70,6 +70,8 @@ dependencies {
     implementation Libs.AndroidX.Hilt.work
     kapt Libs.AndroidX.Hilt.compiler
 
+    implementation Libs.Koin.koin
+
     implementation Libs.Retrofit.runtime
     implementation Libs.Retrofit.serialization
 
