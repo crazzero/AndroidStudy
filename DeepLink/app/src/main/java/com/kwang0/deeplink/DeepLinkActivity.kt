@@ -10,7 +10,10 @@ class DeepLinkActivity : AppCompatActivity() {
 
         Intent(this, MainActivity::class.java)
             .also {
-                it.putExtra("Deep Link", "worked!!")
+                when {
+                    intent.flags and Intent.FLAG_ACTIVITY_LAUNCHED_FROM_HISTORY == 0 -> println("Start from history")
+                    else -> it.putExtra("Deep Link", "worked!!")
+                }
                 startActivity(it)
                 finish()
             }
