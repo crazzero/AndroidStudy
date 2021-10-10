@@ -1,5 +1,6 @@
 package com.kwang0.di.feature
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -30,6 +31,9 @@ class MainActivity : BaseActivity() {
             itemAnimator = null
             layoutManager = LinearLayoutManager(this@MainActivity)
             adapter = mainAdapter
+        }
+        binding.textMainToSecond.setOnClickListener {
+            startActivity(Intent(this, SecondActivity::class.java))
         }
     }
 }

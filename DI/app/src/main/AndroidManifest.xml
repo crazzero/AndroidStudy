@@ -26,6 +26,9 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".feature.SecondActivity" />
+
     </application>
 
 </manifest>

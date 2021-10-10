@@ -8,6 +8,7 @@ import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 
 //@Module
 //@InstallIn(ViewHolderComponent::class)
@@ -33,3 +34,12 @@ import dagger.hilt.InstallIn
 //        return viewHolder as MainViewHolder
 //    }
 //}
+
+@Module
+@InstallIn(SingletonComponent::class)
+abstract class MainHolderModule{
+
+    @Binds
+    abstract fun bindPresenter(impl: MainViewHolderPresenter): MainViewHolderContract.Presenter
+
+}
