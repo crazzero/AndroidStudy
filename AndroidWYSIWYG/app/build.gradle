@@ -41,6 +41,11 @@ dependencies {
     implementation 'com.google.android.material:material:1.3.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
 
+    // wysiwyg
+    implementation 'com.github.lumyjuwon:Android-Rich-Wysiwyg-Editor:1.0.0'
+    implementation 'com.github.irshulx:laser-native-editor:3.0.3'
+    implementation 'jp.wasabeef:richeditor-android:2.0.0'
+
     testImplementation 'junit:junit:4.+'
 
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
