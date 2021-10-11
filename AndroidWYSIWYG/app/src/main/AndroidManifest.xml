@@ -11,6 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidWISYWIG">
         <activity
+            android:name=".ui.activity.WasaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.activity.IrshuActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.activity.LumyActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.activity.CustomActivity"
             android:exported="true" />
         <activity
