@@ -4,4 +4,7 @@ enum class StyleType {
     BASE,
     BOLD,
     ITALIC,
+    LINK,
+    FILE,
+    BUTTON,
 }
