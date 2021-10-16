@@ -19,8 +19,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/undo" />
 
             <ImageView
@@ -28,8 +28,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/redo" />
 
             <ImageView
@@ -37,8 +37,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/bold" />
 
             <ImageView
@@ -46,8 +46,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/italic" />
 
             <ImageView
@@ -55,8 +55,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/subscript" />
 
             <ImageView
@@ -64,8 +64,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/superscript" />
 
             <ImageView
@@ -73,8 +73,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/strikethrough" />
 
             <ImageView
@@ -82,8 +82,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/underline" />
 
             <ImageView
@@ -91,8 +91,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/h1" />
 
             <ImageView
@@ -100,8 +100,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/h2" />
 
             <ImageView
@@ -109,8 +109,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/h3" />
 
             <ImageView
@@ -118,8 +118,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/h4" />
 
             <ImageView
@@ -127,8 +127,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/h5" />
 
             <ImageView
@@ -136,8 +136,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/h6" />
 
             <ImageView
@@ -145,8 +145,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/txt_color" />
 
             <ImageView
@@ -154,8 +154,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/bg_color" />
 
 
@@ -164,8 +164,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/indent" />
 
             <ImageView
@@ -173,8 +173,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/outdent" />
 
             <ImageView
@@ -182,8 +182,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/justify_left" />
 
             <ImageView
@@ -191,8 +191,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/justify_center" />
 
             <ImageView
@@ -200,8 +200,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/justify_right" />
 
             <ImageView
@@ -209,8 +209,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/bullets" />
 
             <ImageView
@@ -218,8 +218,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/numbers" />
 
             <ImageView
@@ -227,8 +227,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/blockquote" />
 
             <ImageView
@@ -236,8 +236,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/insert_image" />
 
             <ImageView
@@ -245,8 +245,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/music" />
 
             <ImageView
@@ -262,8 +262,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/youtube" />
 
             <ImageView
@@ -271,8 +271,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@drawable/insert_link" />
 
             <ImageView
@@ -280,8 +280,8 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@null"
-                android:padding="15dp"
                 android:contentDescription="@null"
+                android:padding="15dp"
                 android:src="@android:drawable/checkbox_on_background" />
 
         </LinearLayout>
