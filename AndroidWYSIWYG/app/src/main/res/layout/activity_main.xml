@@ -4,34 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".ui.activity.MainActivity">
 
-    <EditText
-        android:id="@+id/inputMain"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="start"
-        android:hint="@string/input_wysiwyg_hint"
-        android:padding="16dp"
-        android:textColor="@color/black"
-        android:textSize="16sp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/moveToWasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_wasa" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/black" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/moveToIrshu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_irshu" />
 
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/moveToOneCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_one_code" />
 
-        <com.kwang0.androidwisywig.ui.layout.ActionLayout
-            android:id="@+id/layoutMainAction"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-    </HorizontalScrollView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/moveToCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_custom" />
 
 </LinearLayout>

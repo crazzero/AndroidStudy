@@ -42,7 +42,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
 
     // wysiwyg
-    implementation 'com.github.lumyjuwon:Android-Rich-Wysiwyg-Editor:1.0.0'
+    implementation 'com.github.onecode369:WYSIWYG:4.0'
     implementation 'com.github.irshulx:laser-native-editor:3.0.3'
     implementation 'jp.wasabeef:richeditor-android:2.0.0'
 

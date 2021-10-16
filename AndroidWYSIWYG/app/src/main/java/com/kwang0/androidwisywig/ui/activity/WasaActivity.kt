@@ -21,7 +21,7 @@ class WasaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wasa)
 
-        mEditor = findViewById(R.id.editor)
+        mEditor = findViewById(R.id.editorWasa)
         mEditor?.apply {
             setEditorHeight(200)
             setEditorFontSize(22)

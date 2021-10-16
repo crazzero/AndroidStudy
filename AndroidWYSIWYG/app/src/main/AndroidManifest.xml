@@ -17,7 +17,7 @@
             android:name=".ui.activity.IrshuActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.activity.LumyActivity"
+            android:name=".ui.activity.OneCodeActivity"
             android:exported="true" />
         <activity
             android:name=".ui.activity.CustomActivity"

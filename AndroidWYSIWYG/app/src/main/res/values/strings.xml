@@ -2,4 +2,8 @@
     <string name="app_name">AndroidWISYWIG</string>
 
     <string name="input_wysiwyg_hint">Hello WYSIWYG!!</string>
+    <string name="sample_wasa">Wasa</string>
+    <string name="sample_irshu">Irshu</string>
+    <string name="sample_one_code">One Code</string>
+    <string name="sample_custom">Custom</string>
 </resources>
